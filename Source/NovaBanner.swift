@@ -86,7 +86,7 @@ public class NovaBanner: NSObject {
         
         // Create the Alert Window if necessary
         if bannerWindow == nil {
-            bannerWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
+            bannerWindow = UIWindow(frame: CGRect(origin: CGPointZero, size: CGSize(width: UIScreen.mainScreen().bounds.width, height: 0)))
             // Put the window under the Status Bar so it's no blurred out
             bannerWindow?.windowLevel = UIWindowLevelStatusBar + 1
             bannerWindow?.tintColor = UIApplication.sharedApplication().delegate?.window??.tintColor
@@ -162,7 +162,7 @@ public class NovaBannerViewController: UIViewController {
         view.addSubview(bannerView)
         
         tapGestureRecognizer.addTarget(self, action: #selector(NovaBannerViewController.tapGestureHandler(_:)))
-        view.addGestureRecognizer(tapGestureRecognizer)
+        bannerView.addGestureRecognizer(tapGestureRecognizer)
     }
     
     private var bannerViewContraints: ConstraintGroup?
@@ -180,7 +180,7 @@ public class NovaBannerViewController: UIViewController {
         
         bannerView.imageView.image = banner.image
         bannerView.titleLabel.text = banner.title
-        bannerView.subtitleLabel.text = banner.title
+        bannerView.subtitleLabel.text = banner.subtitle
         
         bannerView.applyTheme(banner.theme)
     }
@@ -188,6 +188,11 @@ public class NovaBannerViewController: UIViewController {
     public override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+    }
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        banner.bannerWindow?.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: (banner.bannerWindow!.frame.width), height: bannerView.frame.height))
     }
     
     public override func viewDidAppear(animated: Bool) {
@@ -283,12 +288,17 @@ public class NovaBannerView: UIView {
                 imageView.width == 0
             }
             
-            titleLabel.top == view.top + theme.bannerPadding.top + theme.topPadding
-            titleLabel.bottom == subtitleLabel.top - theme.textSpacing
-            subtitleLabel.bottom == view.bottom - theme.bannerPadding.bottom
-            
             titleLabel.left == imageView.right + theme.bannerPadding.left
             titleLabel.right == view.right - theme.bannerPadding.right
+            titleLabel.top == view.top + theme.bannerPadding.top + theme.topPadding
+            
+            if self.subtitleLabel.text != nil {
+                titleLabel.bottom == subtitleLabel.top - theme.textSpacing
+            } else {
+                titleLabel.bottom == subtitleLabel.top
+            }
+            
+            subtitleLabel.bottom == view.bottom - theme.bannerPadding.bottom
             
             subtitleLabel.left == imageView.right + theme.bannerPadding.left
             subtitleLabel.right == view.right - theme.bannerPadding.right
