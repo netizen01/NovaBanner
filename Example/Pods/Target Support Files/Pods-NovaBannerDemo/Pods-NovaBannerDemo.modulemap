@@ -1,0 +1,6 @@
+framework module Pods_NovaBannerDemo {
+  umbrella header "Pods-NovaBannerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

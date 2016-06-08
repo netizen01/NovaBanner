@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DEF47691D085AB0006C3771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF47681D085AB0006C3771 /* AppDelegate.swift */; };
+		8DEF476B1D085AB0006C3771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEF476A1D085AB0006C3771 /* ViewController.swift */; };
+		8DEF476E1D085AB0006C3771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF476C1D085AB0006C3771 /* Main.storyboard */; };
+		8DEF47701D085AB0006C3771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF476F1D085AB0006C3771 /* Assets.xcassets */; };
+		8DEF47731D085AB0006C3771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF47711D085AB0006C3771 /* LaunchScreen.storyboard */; };
+		FF86540772EDF8EE12EDD7C0 /* Pods_NovaBannerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8DEF47651D085AB0006C3771 /* NovaBannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovaBannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEF47681D085AB0006C3771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DEF476A1D085AB0006C3771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DEF476D1D085AB0006C3771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DEF476F1D085AB0006C3771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DEF47721D085AB0006C3771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DEF47741D085AB0006C3771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaBannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DEF47621D085AB0006C3771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF86540772EDF8EE12EDD7C0 /* Pods_NovaBannerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		647647B5CE032FE5BD2B181D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */,
+				965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DEF475C1D085AB0006C3771 = {
+			isa = PBXGroup;
+			children = (
+				8DEF47671D085AB0006C3771 /* NovaBannerDemo */,
+				8DEF47661D085AB0006C3771 /* Products */,
+				647647B5CE032FE5BD2B181D /* Pods */,
+				8E87D85EB8D5A289593BB981 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8DEF47661D085AB0006C3771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DEF47651D085AB0006C3771 /* NovaBannerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DEF47671D085AB0006C3771 /* NovaBannerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8DEF47681D085AB0006C3771 /* AppDelegate.swift */,
+				8DEF476A1D085AB0006C3771 /* ViewController.swift */,
+				8DEF476C1D085AB0006C3771 /* Main.storyboard */,
+				8DEF476F1D085AB0006C3771 /* Assets.xcassets */,
+				8DEF47711D085AB0006C3771 /* LaunchScreen.storyboard */,
+				8DEF47741D085AB0006C3771 /* Info.plist */,
+			);
+			path = NovaBannerDemo;
+			sourceTree = "<group>";
+		};
+		8E87D85EB8D5A289593BB981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DEF47641D085AB0006C3771 /* NovaBannerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DEF47771D085AB0006C3771 /* Build configuration list for PBXNativeTarget "NovaBannerDemo" */;
+			buildPhases = (
+				F38BAFCAC620CBB462FFC230 /* [CP] Check Pods Manifest.lock */,
+				8DEF47611D085AB0006C3771 /* Sources */,
+				8DEF47621D085AB0006C3771 /* Frameworks */,
+				8DEF47631D085AB0006C3771 /* Resources */,
+				7C645CB5B1A19E29495FC022 /* [CP] Embed Pods Frameworks */,
+				85795307B1EC013979CA5567 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NovaBannerDemo;
+			productName = NovaBannerDemo;
+			productReference = 8DEF47651D085AB0006C3771 /* NovaBannerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DEF475D1D085AB0006C3771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Example;
+				TargetAttributes = {
+					8DEF47641D085AB0006C3771 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8DEF47601D085AB0006C3771 /* Build configuration list for PBXProject "NovaBannerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DEF475C1D085AB0006C3771;
+			productRefGroup = 8DEF47661D085AB0006C3771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DEF47641D085AB0006C3771 /* NovaBannerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DEF47631D085AB0006C3771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEF47731D085AB0006C3771 /* LaunchScreen.storyboard in Resources */,
+				8DEF47701D085AB0006C3771 /* Assets.xcassets in Resources */,
+				8DEF476E1D085AB0006C3771 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C645CB5B1A19E29495FC022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85795307B1EC013979CA5567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F38BAFCAC620CBB462FFC230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DEF47611D085AB0006C3771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEF476B1D085AB0006C3771 /* ViewController.swift in Sources */,
+				8DEF47691D085AB0006C3771 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DEF476C1D085AB0006C3771 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEF476D1D085AB0006C3771 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DEF47711D085AB0006C3771 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEF47721D085AB0006C3771 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DEF47751D085AB0006C3771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DEF47761D085AB0006C3771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DEF47781D085AB0006C3771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NovaBannerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NovaBannerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8DEF47791D085AB0006C3771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NovaBannerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NovaBannerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DEF47601D085AB0006C3771 /* Build configuration list for PBXProject "NovaBannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DEF47751D085AB0006C3771 /* Debug */,
+				8DEF47761D085AB0006C3771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DEF47771D085AB0006C3771 /* Build configuration list for PBXNativeTarget "NovaBannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DEF47781D085AB0006C3771 /* Debug */,
+				8DEF47791D085AB0006C3771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DEF475D1D085AB0006C3771 /* Project object */;
+}

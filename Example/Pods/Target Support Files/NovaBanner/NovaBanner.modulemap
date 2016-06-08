@@ -1,0 +1,6 @@
+framework module NovaBanner {
+  umbrella header "NovaBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
