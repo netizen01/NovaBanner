@@ -82,7 +82,10 @@ public class NovaBanner: NSObject {
     private var dismissTimer: NSTimer?
     public func show(duration duration: NSTimeInterval? = NovaBanner.DefaultDuration) -> NovaBanner {
         // Mimic the current Status Bar Style for this UIWindow / View Controller
-        statusBarStyle = UIApplication.sharedApplication().keyWindow?.rootViewController?.preferredStatusBarStyle() ?? .Default
+        if let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController {
+            statusBarStyle = rootVC.preferredStatusBarStyle()
+            statusBarHidden = rootVC.prefersStatusBarHidden()
+        }
         
         // Create the Alert Window if necessary
         if bannerWindow == nil {
@@ -94,7 +97,7 @@ public class NovaBanner: NSObject {
             bannerWindow?.makeKeyAndVisible()
         }
         
-        if let duration = duration {
+        if let duration = duration where duration > 0 {
             dismissTimer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(NovaBanner.autoDismissTimer(_:)), userInfo: nil, repeats: false)
         }
         
@@ -112,6 +115,7 @@ public class NovaBanner: NSObject {
     // Private
     private var bannerWindow: UIWindow?
     private var statusBarStyle: UIStatusBarStyle = .Default
+    private var statusBarHidden: Bool = false
     
     private func destroy() {
         dismissHandler?()
@@ -207,6 +211,9 @@ public class NovaBannerViewController: UIViewController {
     }
 
     private func dismiss(animated: Bool = true, completion: (() -> ())? = nil) {
+        if banner == nil {
+            return
+        }
         if animated {
             constrain(view, bannerView, replace: bannerViewContraints!) { view, bannerView in
                 bannerView.bottom == view.top
@@ -218,7 +225,7 @@ public class NovaBannerViewController: UIViewController {
                 completion?()
             }
         } else {
-            self.banner.destroy()
+            banner.destroy()
             completion?()
         }
     }
@@ -230,6 +237,10 @@ public class NovaBannerViewController: UIViewController {
             banner.tapHandler?(banner: banner)
             banner.dismiss()
         }
+    }
+    
+    public override func prefersStatusBarHidden() -> Bool {
+        return banner.statusBarHidden
     }
     
     public override func preferredStatusBarStyle() -> UIStatusBarStyle {
