@@ -55,8 +55,6 @@ public class NovaBanner: NSObject {
     public let tapHandler: ((banner: NovaBanner) -> ())?
     public let dismissHandler: (() -> ())?
     
-    public let viewController = NovaBannerViewController()
-    
     public init(title: String, subtitle: String? = nil, type: BannerType = .Default, image: UIImage? = nil, tapped: ((banner: NovaBanner) -> ())? = nil, dismissed: (() -> ())? = nil) {
         self.title = title
         self.subtitle = subtitle
@@ -79,6 +77,7 @@ public class NovaBanner: NSObject {
         viewController.banner = self
     }
     
+    private let viewController = NovaBannerViewController()
     private var dismissTimer: NSTimer?
     public func show(duration duration: NSTimeInterval? = NovaBanner.DefaultDuration) -> NovaBanner {
         // Mimic the current Status Bar Style for this UIWindow / View Controller
@@ -129,10 +128,8 @@ public class NovaBanner: NSObject {
         dismiss()
     }
     
-    
     deinit {
         dismissTimer?.invalidate()
-        print("deinit \(self.dynamicType)")
     }
 }
 
@@ -142,11 +139,11 @@ public class NovaBanner: NSObject {
 
 
 
-public class NovaBannerViewController: UIViewController {
+class NovaBannerViewController: UIViewController {
 
     private var banner: NovaBanner!
     
-    public let bannerView = NovaBannerView()
+    private let bannerView = NovaBannerView()
     
     private let tapGestureRecognizer = UITapGestureRecognizer()
     
@@ -157,11 +154,11 @@ public class NovaBannerViewController: UIViewController {
         modalTransitionStyle = .CrossDissolve
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("not implemented")
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    public override func loadView() {
+    override func loadView() {
         view = UIView(frame: CGRect.zero)
         view.addSubview(bannerView)
         
@@ -170,7 +167,7 @@ public class NovaBannerViewController: UIViewController {
     }
     
     private var bannerViewContraints: ConstraintGroup?
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         constrain(bannerView, view) { bannerView, view in
@@ -189,17 +186,17 @@ public class NovaBannerViewController: UIViewController {
         bannerView.applyTheme(banner.theme)
     }
     
-    public override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
     }
-    public override func viewDidLayoutSubviews() {
+    override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         banner.bannerWindow?.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: (banner.bannerWindow!.frame.width), height: bannerView.frame.height))
     }
     
-    public override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         constrain(view, bannerView, replace: bannerViewContraints!) { view, bannerView in
@@ -239,24 +236,21 @@ public class NovaBannerViewController: UIViewController {
         }
     }
     
-    public override func prefersStatusBarHidden() -> Bool {
+    override func prefersStatusBarHidden() -> Bool {
         return banner.statusBarHidden
     }
     
-    public override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return banner.statusBarStyle ?? .Default
     }
     
-    deinit {
-        print("deinit \(self.dynamicType)")
-    }
 }
 
 
 
 
 
-public class NovaBannerView: UIView {
+class NovaBannerView: UIView {
     
     private let titleLabel = UILabel(frame: CGRect.zero)
     private let subtitleLabel = UILabel(frame: CGRect.zero)
@@ -316,11 +310,8 @@ public class NovaBannerView: UIView {
         }
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {
-        print("deinit \(self.dynamicType)")
-    }
 }
