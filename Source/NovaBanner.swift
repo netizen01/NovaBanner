@@ -166,7 +166,7 @@ class NovaBannerViewController: UIViewController {
         bannerView.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    private var bannerViewContraints: ConstraintGroup?
+    private var bannerViewContraints: ConstraintGroup!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -199,7 +199,7 @@ class NovaBannerViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        constrain(view, bannerView, replace: bannerViewContraints!) { view, bannerView in
+        bannerViewContraints = constrain(view, bannerView, replace: bannerViewContraints) { view, bannerView in
             bannerView.top == view.top - banner.theme.topPadding
         }
         UIView.animateWithDuration(banner.theme.animateInDuration) {
@@ -212,7 +212,7 @@ class NovaBannerViewController: UIViewController {
             return
         }
         if animated {
-            constrain(view, bannerView, replace: bannerViewContraints!) { view, bannerView in
+            bannerViewContraints = constrain(view, bannerView, replace: bannerViewContraints) { view, bannerView in
                 bannerView.bottom == view.top
             }
             UIView.animateWithDuration(banner.theme.animateOutDuration, animations: {
