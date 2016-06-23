@@ -276,10 +276,10 @@ class NovaBannerView: UIView {
     internal func applyTheme(theme: NovaBanner.Theme) {
         
         backgroundColor = theme.backgroundColor
-        
         titleLabel.font = theme.titleFont
         subtitleLabel.font = theme.subtitleFont
         
+        imageView.tintColor = theme.titleColor
         titleLabel.textColor = theme.titleColor
         subtitleLabel.textColor = theme.subtitleColor
 
