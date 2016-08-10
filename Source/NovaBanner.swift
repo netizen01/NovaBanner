@@ -18,8 +18,8 @@ public class NovaBanner: NSObject {
         public var topPadding: CGFloat = 20
         public var animateInDuration: NSTimeInterval = 0.25
         public var animateOutDuration: NSTimeInterval = 0.25
-        public var titleFont: UIFont = .boldSystemFontOfSize(16)
-        public var subtitleFont: UIFont = .systemFontOfSize(14)
+        public var titleFont: UIFont = .preferredFontForTextStyle(UIFontTextStyleHeadline)
+        public var subtitleFont: UIFont = .preferredFontForTextStyle(UIFontTextStyleSubheadline)
         
         init() {
             
@@ -269,7 +269,10 @@ class NovaBannerView: UIView {
         imageView.contentMode = .ScaleAspectFit
         imageView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, forAxis: .Horizontal)
         imageView.setContentHuggingPriority(UILayoutPriorityRequired, forAxis: .Horizontal)
-
+        
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.minimumScaleFactor = 0.5
+        
         subtitleLabel.numberOfLines = 2
     }
     
