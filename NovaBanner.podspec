@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
                             :tag => spec.version.to_s }
     spec.source_files   = 'Source/**/*.swift'
 
-    spec.dependency     'NovaCore', '~> 0.2'
-    spec.dependency     'Cartography', '~> 0.6'
+    spec.dependency     'NovaCore'
+    spec.dependency     'Cartography'
 
 end
