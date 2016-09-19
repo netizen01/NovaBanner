@@ -218,7 +218,7 @@ class NovaBannerViewController: UIViewController {
             UIView.animateWithDuration(banner.theme.animateOutDuration, animations: {
                 self.view.layoutIfNeeded()
             }) { finished in
-                self.banner.destroy()
+                self.banner?.destroy()
                 completion?()
             }
         } else {
