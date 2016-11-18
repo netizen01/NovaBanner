@@ -6,20 +6,20 @@ import UIKit
 import Cartography
 import NovaCore
 
-public class NovaBanner: NSObject {
+open class NovaBanner: NSObject {
     
     public struct Theme {
         public var backgroundColor: UIColor? = UIColor(white: 0.1, alpha: 0.9)
-        public var titleColor: UIColor = .whiteColor()
-        public var subtitleColor: UIColor = .whiteColor()
+        public var titleColor: UIColor = .white
+        public var subtitleColor: UIColor = .white
         
         public var bannerPadding: UIEdgeInsets = UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8)
         public var textSpacing: CGFloat = 4
         public var topPadding: CGFloat = 20
-        public var animateInDuration: NSTimeInterval = 0.25
-        public var animateOutDuration: NSTimeInterval = 0.25
-        public var titleFont: UIFont = .preferredFontForTextStyle(UIFontTextStyleHeadline)
-        public var subtitleFont: UIFont = .preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        public var animateInDuration: TimeInterval = 0.25
+        public var animateOutDuration: TimeInterval = 0.25
+        public var titleFont: UIFont = .preferredFont(forTextStyle: UIFontTextStyle.headline)
+        public var subtitleFont: UIFont = .preferredFont(forTextStyle: UIFontTextStyle.subheadline)
         
         init() {
             
@@ -33,29 +33,29 @@ public class NovaBanner: NSObject {
     }
     
     // Adjust the static Default Themes
-    public static var DefaultDuration: NSTimeInterval = 6
-    public static var ThemeDefault = Theme()
-    public static var ThemeNotify = Theme(.blackColor(), .whiteColor())
-    public static var ThemeFailure = Theme(.blackColor(), .whiteColor())
-    public static var ThemeSuccess = Theme(.blackColor(), .whiteColor())
+    open static var DefaultDuration: TimeInterval = 6
+    open static var ThemeDefault = Theme()
+    open static var ThemeNotify = Theme(.black, .white)
+    open static var ThemeFailure = Theme(.black, .white)
+    open static var ThemeSuccess = Theme(.black, .white)
     
     public enum BannerType {
-        case Default
-        case Notify
-        case Failure
-        case Success
+        case `default`
+        case notify
+        case failure
+        case success
     }
     
-    public var theme: Theme = ThemeDefault
+    open var theme: Theme = ThemeDefault
     
-    public let type: BannerType
-    public let title: String
-    public let subtitle: String?
-    public let image: UIImage?
-    public let tapHandler: ((banner: NovaBanner) -> ())?
-    public let dismissHandler: (() -> ())?
+    open let type: BannerType
+    open let title: String
+    open let subtitle: String?
+    open let image: UIImage?
+    open let tapHandler: ((_ banner: NovaBanner) -> ())?
+    open let dismissHandler: (() -> ())?
     
-    public init(title: String, subtitle: String? = nil, type: BannerType = .Default, image: UIImage? = nil, tapped: ((banner: NovaBanner) -> ())? = nil, dismissed: (() -> ())? = nil) {
+    public init(title: String, subtitle: String? = nil, type: BannerType = .default, image: UIImage? = nil, tapped: ((_ banner: NovaBanner) -> ())? = nil, dismissed: (() -> ())? = nil) {
         self.title = title
         self.subtitle = subtitle
         self.image = image
@@ -64,46 +64,46 @@ public class NovaBanner: NSObject {
         self.dismissHandler = dismissed
         
         switch type {
-        case .Default:
+        case .default:
             theme = NovaBanner.ThemeDefault
-        case .Notify:
+        case .notify:
             theme = NovaBanner.ThemeNotify
-        case .Failure:
+        case .failure:
             theme = NovaBanner.ThemeFailure
-        case .Success:
+        case .success:
             theme = NovaBanner.ThemeSuccess
         }
         super.init()
         viewController.banner = self
     }
     
-    private let viewController = NovaBannerViewController()
-    private var dismissTimer: NSTimer?
-    public func show(duration duration: NSTimeInterval? = NovaBanner.DefaultDuration) -> NovaBanner {
+    fileprivate let viewController = NovaBannerViewController()
+    fileprivate var dismissTimer: Timer?
+    @discardableResult open func show(duration: TimeInterval? = NovaBanner.DefaultDuration) -> NovaBanner {
         // Mimic the current Status Bar Style for this UIWindow / View Controller
-        if let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController {
-            statusBarStyle = rootVC.preferredStatusBarStyle()
-            statusBarHidden = rootVC.prefersStatusBarHidden()
+        if let rootVC = UIApplication.shared.keyWindow?.rootViewController {
+            statusBarStyle = rootVC.preferredStatusBarStyle
+            statusBarHidden = rootVC.prefersStatusBarHidden
         }
         
         // Create the Alert Window if necessary
         if bannerWindow == nil {
-            bannerWindow = UIWindow(frame: CGRect(origin: CGPointZero, size: CGSize(width: UIScreen.mainScreen().bounds.width, height: 0)))
+            bannerWindow = UIWindow(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: UIScreen.main.bounds.width, height: 0)))
             // Put the window under the Status Bar so it's no blurred out
             bannerWindow?.windowLevel = UIWindowLevelStatusBar + 1
-            bannerWindow?.tintColor = UIApplication.sharedApplication().delegate?.window??.tintColor
+            bannerWindow?.tintColor = UIApplication.shared.delegate?.window??.tintColor
             bannerWindow?.rootViewController = viewController
             bannerWindow?.makeKeyAndVisible()
         }
         
-        if let duration = duration where duration > 0 {
-            dismissTimer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(NovaBanner.autoDismissTimer(_:)), userInfo: nil, repeats: false)
+        if let duration = duration, duration > 0 {
+            dismissTimer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(NovaBanner.autoDismissTimer(_:)), userInfo: nil, repeats: false)
         }
         
         return self
     }
     
-    public func dismiss(animated: Bool = true, completion: (() -> ())? = nil) -> NovaBanner {
+    @discardableResult open func dismiss(_ animated: Bool = true, completion: (() -> ())? = nil) -> NovaBanner {
         dismissTimer?.invalidate()
         dismissTimer = nil
         viewController.dismiss(animated, completion: completion)
@@ -112,19 +112,19 @@ public class NovaBanner: NSObject {
     
     
     // Private
-    private var bannerWindow: UIWindow?
-    private var statusBarStyle: UIStatusBarStyle = .Default
-    private var statusBarHidden: Bool = false
+    fileprivate var bannerWindow: UIWindow?
+    fileprivate var statusBarStyle: UIStatusBarStyle = .default
+    fileprivate var statusBarHidden: Bool = false
     
-    private func destroy() {
+    fileprivate func destroy() {
         dismissHandler?()
-        bannerWindow?.hidden = true
+        bannerWindow?.isHidden = true
         bannerWindow?.rootViewController = nil
         bannerWindow = nil
         viewController.banner = nil
     }
     
-    func autoDismissTimer(timer: NSTimer) {
+    func autoDismissTimer(_ timer: Timer) {
         dismiss()
     }
     
@@ -141,17 +141,17 @@ public class NovaBanner: NSObject {
 
 class NovaBannerViewController: UIViewController {
 
-    private var banner: NovaBanner!
+    fileprivate var banner: NovaBanner!
     
-    private let bannerView = NovaBannerView()
+    fileprivate let bannerView = NovaBannerView()
     
-    private let tapGestureRecognizer = UITapGestureRecognizer()
+    fileprivate let tapGestureRecognizer = UITapGestureRecognizer()
     
     init() {
         super.init(nibName: nil, bundle: nil)
         
-        modalPresentationStyle = .None
-        modalTransitionStyle = .CrossDissolve
+        modalPresentationStyle = .none
+        modalTransitionStyle = .crossDissolve
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -166,7 +166,7 @@ class NovaBannerViewController: UIViewController {
         bannerView.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    private var bannerViewContraints: ConstraintGroup!
+    fileprivate var bannerViewContraints: ConstraintGroup!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -186,7 +186,7 @@ class NovaBannerViewController: UIViewController {
         bannerView.applyTheme(banner.theme)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
@@ -196,18 +196,18 @@ class NovaBannerViewController: UIViewController {
         banner.bannerWindow?.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: (banner.bannerWindow!.frame.width), height: bannerView.frame.height))
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         bannerViewContraints = constrain(view, bannerView, replace: bannerViewContraints) { view, bannerView in
             bannerView.top == view.top - banner.theme.topPadding
         }
-        UIView.animateWithDuration(banner.theme.animateInDuration) {
+        UIView.animate(withDuration: banner.theme.animateInDuration, animations: {
             self.view.layoutIfNeeded()
-        }
+        }) 
     }
 
-    private func dismiss(animated: Bool = true, completion: (() -> ())? = nil) {
+    fileprivate func dismiss(_ animated: Bool = true, completion: (() -> ())? = nil) {
         if banner == nil {
             return
         }
@@ -215,12 +215,12 @@ class NovaBannerViewController: UIViewController {
             bannerViewContraints = constrain(view, bannerView, replace: bannerViewContraints) { view, bannerView in
                 bannerView.bottom == view.top
             }
-            UIView.animateWithDuration(banner.theme.animateOutDuration, animations: {
+            UIView.animate(withDuration: banner.theme.animateOutDuration, animations: {
                 self.view.layoutIfNeeded()
-            }) { finished in
+            }, completion: { finished in
                 self.banner?.destroy()
                 completion?()
-            }
+            }) 
         } else {
             banner.destroy()
             completion?()
@@ -228,20 +228,20 @@ class NovaBannerViewController: UIViewController {
     }
     
     
-    func tapGestureHandler(gesture: UITapGestureRecognizer) {
-        if bannerView.hitTest(gesture.locationInView(bannerView), withEvent: nil) != nil {
-            gesture.enabled = false
-            banner.tapHandler?(banner: banner)
+    func tapGestureHandler(_ gesture: UITapGestureRecognizer) {
+        if bannerView.hitTest(gesture.location(in: bannerView), with: nil) != nil {
+            gesture.isEnabled = false
+            banner.tapHandler?(banner)
             banner.dismiss()
         }
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return banner.statusBarHidden
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return banner.statusBarStyle ?? .Default
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return banner.statusBarStyle ?? .default
     }
     
 }
@@ -252,9 +252,9 @@ class NovaBannerViewController: UIViewController {
 
 class NovaBannerView: UIView {
     
-    private let titleLabel = UILabel(frame: CGRect.zero)
-    private let subtitleLabel = UILabel(frame: CGRect.zero)
-    private let imageView = UIImageView(frame: CGRect.zero)
+    fileprivate let titleLabel = UILabel(frame: CGRect.zero)
+    fileprivate let subtitleLabel = UILabel(frame: CGRect.zero)
+    fileprivate let imageView = UIImageView(frame: CGRect.zero)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -263,12 +263,12 @@ class NovaBannerView: UIView {
         addSubview(titleLabel)
         addSubview(subtitleLabel)
         
-        titleLabel.textAlignment = .Left
-        subtitleLabel.textAlignment = .Left
+        titleLabel.textAlignment = .left
+        subtitleLabel.textAlignment = .left
         
-        imageView.contentMode = .ScaleAspectFit
-        imageView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, forAxis: .Horizontal)
-        imageView.setContentHuggingPriority(UILayoutPriorityRequired, forAxis: .Horizontal)
+        imageView.contentMode = .scaleAspectFit
+        imageView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: .horizontal)
+        imageView.setContentHuggingPriority(UILayoutPriorityRequired, for: .horizontal)
         
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.minimumScaleFactor = 0.5
@@ -276,7 +276,7 @@ class NovaBannerView: UIView {
         subtitleLabel.numberOfLines = 2
     }
     
-    internal func applyTheme(theme: NovaBanner.Theme) {
+    internal func applyTheme(_ theme: NovaBanner.Theme) {
         
         backgroundColor = theme.backgroundColor
         titleLabel.font = theme.titleFont
