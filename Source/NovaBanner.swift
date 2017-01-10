@@ -241,7 +241,7 @@ class NovaBannerViewController: UIViewController {
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
-        return banner.statusBarStyle ?? .default
+        return banner.statusBarStyle
     }
     
 }
