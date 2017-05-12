@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name           = 'NovaBanner'
-    spec.version        = '0.1'
+    spec.version        = '0.2'
     spec.summary        = 'Another Banner Package. Because.'
 
     spec.homepage       = 'https://github.com/netizen01/NovaBanner'
