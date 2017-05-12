@@ -11,15 +11,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Customize your NovaBanner Themes (Default, Notify, Failure, Success)
-        var theme = NovaBanner.Theme(UIColor(white: 0.1, alpha: 0.9), .whiteColor())
+        var theme = NovaBanner.Theme(UIColor(white: 0.1, alpha: 0.9), .white)
         
         /*
-        theme.backgroundColor = UIColor(white: 0.1, alpha: 0.9)  // Set via the ctor
-        theme.titleColor = .whiteColor()                         // Set via the ctor
-        theme.subtitleColor = .whiteColor()                      // Set via the ctor
+        theme.backgroundColor = UIColor(white: 0.1, alpha: 0.9) // Set via the ctor
+        theme.titleColor = .white                               // Set via the ctor
+        theme.subtitleColor = .white                            // Set via the ctor
         */
         
         // These are all the options (with default values displayed) you can adjust for your NovaBanner Theme
@@ -37,20 +37,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NovaBanner.ThemeDefault = theme
         
         // Make adjustments for the various themes
-        theme.backgroundColor = .yellowColor()
+        theme.backgroundColor = .yellow
         NovaBanner.ThemeNotify = theme
         
-        theme.backgroundColor = .redColor()
+        theme.backgroundColor = .red
         NovaBanner.ThemeFailure = theme
         
-        theme.backgroundColor = .greenColor()
+        theme.backgroundColor = .green
         NovaBanner.ThemeSuccess = theme
         
         // If the defaults are acceptable, you could also just adjust the various Theme properties directly.
         /*
-        NovaBanner.ThemeNotify.backgroundColor = .yellowColor()
-        NovaBanner.ThemeFailure.backgroundColor = .redColor()
-        NovaBanner.ThemeSuccess.backgroundColor = .greenColor()
+        NovaBanner.ThemeNotify.backgroundColor = .yellow
+        NovaBanner.ThemeFailure.backgroundColor = .red
+        NovaBanner.ThemeSuccess.backgroundColor = .green
         */
         
         return true

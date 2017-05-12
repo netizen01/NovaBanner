@@ -12,10 +12,12 @@
 		8DEF476E1D085AB0006C3771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF476C1D085AB0006C3771 /* Main.storyboard */; };
 		8DEF47701D085AB0006C3771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF476F1D085AB0006C3771 /* Assets.xcassets */; };
 		8DEF47731D085AB0006C3771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEF47711D085AB0006C3771 /* LaunchScreen.storyboard */; };
-		FF86540772EDF8EE12EDD7C0 /* Pods_NovaBannerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */; };
+		AB74B7292F8301F61A2773A0 /* Pods_NovaBannerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBF3810AADF1C60C77E5AA2 /* Pods_NovaBannerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42284F5EE64B11F665942D4E /* Pods-NovaBannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5CBF3810AADF1C60C77E5AA2 /* Pods_NovaBannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaBannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEF47651D085AB0006C3771 /* NovaBannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovaBannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEF47681D085AB0006C3771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEF476A1D085AB0006C3771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,9 +25,7 @@
 		8DEF476F1D085AB0006C3771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DEF47721D085AB0006C3771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DEF47741D085AB0006C3771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaBannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9241436CB324E30C3E7A755 /* Pods-NovaBannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaBannerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,18 +33,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF86540772EDF8EE12EDD7C0 /* Pods_NovaBannerDemo.framework in Frameworks */,
+				AB74B7292F8301F61A2773A0 /* Pods_NovaBannerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		647647B5CE032FE5BD2B181D /* Pods */ = {
+		386AAF3498A19B20BA7B0C4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */,
-				965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */,
+				C9241436CB324E30C3E7A755 /* Pods-NovaBannerDemo.debug.xcconfig */,
+				42284F5EE64B11F665942D4E /* Pods-NovaBannerDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -54,8 +54,8 @@
 			children = (
 				8DEF47671D085AB0006C3771 /* NovaBannerDemo */,
 				8DEF47661D085AB0006C3771 /* Products */,
-				647647B5CE032FE5BD2B181D /* Pods */,
-				8E87D85EB8D5A289593BB981 /* Frameworks */,
+				386AAF3498A19B20BA7B0C4E /* Pods */,
+				D0959283BCF4EE98661C44B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,10 +80,10 @@
 			path = NovaBannerDemo;
 			sourceTree = "<group>";
 		};
-		8E87D85EB8D5A289593BB981 /* Frameworks */ = {
+		D0959283BCF4EE98661C44B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EF49CDB7B5468D12F1F09C36 /* Pods_NovaBannerDemo.framework */,
+				5CBF3810AADF1C60C77E5AA2 /* Pods_NovaBannerDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,12 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DEF47771D085AB0006C3771 /* Build configuration list for PBXNativeTarget "NovaBannerDemo" */;
 			buildPhases = (
-				F38BAFCAC620CBB462FFC230 /* [CP] Check Pods Manifest.lock */,
+				9B926C44AEB4D75DD8D2EA33 /* [CP] Check Pods Manifest.lock */,
 				8DEF47611D085AB0006C3771 /* Sources */,
 				8DEF47621D085AB0006C3771 /* Frameworks */,
 				8DEF47631D085AB0006C3771 /* Resources */,
-				7C645CB5B1A19E29495FC022 /* [CP] Embed Pods Frameworks */,
-				85795307B1EC013979CA5567 /* [CP] Copy Pods Resources */,
+				2E5284958759FE76D787FA0D /* [CP] Embed Pods Frameworks */,
+				2727C61AD0E9E26B215CDC45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -118,11 +118,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Example;
 				TargetAttributes = {
 					8DEF47641D085AB0006C3771 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TBX23QV8NE;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -158,22 +161,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7C645CB5B1A19E29495FC022 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85795307B1EC013979CA5567 /* [CP] Copy Pods Resources */ = {
+		2727C61AD0E9E26B215CDC45 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -188,7 +176,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F38BAFCAC620CBB462FFC230 /* [CP] Check Pods Manifest.lock */ = {
+		2E5284958759FE76D787FA0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B926C44AEB4D75DD8D2EA33 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,7 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -251,8 +254,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -296,8 +301,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -316,31 +323,40 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8DEF47781D085AB0006C3771 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D834BA2F9FE9568B18E319C3 /* Pods-NovaBannerDemo.debug.xcconfig */;
+			baseConfigurationReference = C9241436CB324E30C3E7A755 /* Pods-NovaBannerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TBX23QV8NE;
 				INFOPLIST_FILE = NovaBannerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NovaBannerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8DEF47791D085AB0006C3771 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 965DDAB59F882896728D95DE /* Pods-NovaBannerDemo.release.xcconfig */;
+			baseConfigurationReference = 42284F5EE64B11F665942D4E /* Pods-NovaBannerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TBX23QV8NE;
 				INFOPLIST_FILE = NovaBannerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.NovaBannerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

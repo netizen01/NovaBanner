@@ -8,9 +8,9 @@ import NovaBanner
 
 class ViewController: UIViewController {
     
-    @IBAction func showBannerHandler(sender: UIButton) {
+    @IBAction func showBannerHandler(_ sender: UIButton) {
         
-        NovaBanner(title: "Demo Banner", subtitle: "Subtitle Text", type: NovaBanner.BannerType.Default, image: UIImage(named: "whale"), tapped: { banner in
+        NovaBanner(title: "Demo Banner", subtitle: "Subtitle Text", type: NovaBanner.BannerType.default, image: UIImage(named: "whale"), tapped: { banner in
             print("Banner Tapped")
         }) { banner in
             print("Banner Dismissed")

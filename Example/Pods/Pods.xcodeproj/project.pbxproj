@@ -7,191 +7,239 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0729DED1737DCDB309394E0B59393F37 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2AE0090970127B4C2087028C5F60A /* Dimension.swift */; };
-		193D22FD025E8F2AB2C7A9764224DF09 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61CCA960F229CFDCD97F748A3F0D61A /* UIImage.swift */; };
-		1AE88163C63BABEB06B87CC2EB20AE8D /* NovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE2EEDBE9A93A2C94D56E7131CEF6EF /* NovaApp.swift */; };
-		2057FF930EF0F28E7AD548BF23BE78EE /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9FAFA033EFE4F5804568CAD457744E /* Edge.swift */; };
-		28515F6FFAA0E2F9591A862D532F33AC /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3714A07EB5718DE5351C77293A8D3CD /* Compound.swift */; };
-		369CA2AACEED2517C99D77D7700DFCEA /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDDE11D3FEB006F507D361F1612C7C /* Distribute.swift */; };
-		3AC269E1EF179D53A0AFC3583B7B8E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */; };
-		3BAEE84C87FAA78365B69E0BED8C9064 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BC2518E0FCD4746A7F6F8795682C1 /* Easing.swift */; };
-		452C09D0CAC1F8286ABA1CE076033B23 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B6751D38448E6F2E2E92BC14FBC1E /* Context.swift */; };
-		48ADE3FB3F30FCA5893083351449DA98 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E21AB4D6CED1B4246B61EC45C6C31 /* ViewUtils.swift */; };
-		49D92D3534593AF09997B9DA5721703F /* NovaBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23915F27A5AAFB9C7C78F6A4D78361E6 /* NovaBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5044CA9F7CCBB02F3C294106022FCF9F /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779FD395336651F49F688F84371C1F26 /* Edges.swift */; };
-		584B68A7069844742AEF67ED9311FF50 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9BF633CE62A7ADFE5BD139F40764E /* Align.swift */; };
-		62C027FEF67583E7C94F080DF2F6A888 /* NovaBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8976377714D0BC674127EB42FE00FA /* NovaBanner-dummy.m */; };
-		73E36562854374C87E7789EA92417B2C /* NovaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1E1CC270C9F39396C8C57D3A88F68 /* NovaCore.framework */; };
-		7CD04D81B5ED213A105DFC517187EB87 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD408BD4982006713B87ADDCB7EE4CD3 /* Expression.swift */; };
-		7DA110C0A83A1951586ADA6CB05CAF0B /* Pods-NovaBannerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C52595162DA53314CF948570AF37AB /* Pods-NovaBannerDemo-dummy.m */; };
-		8378B61D28075525380201114F6E4582 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F845A4B799A732DBBB9C72C04C65FC0E /* LayoutProxy.swift */; };
-		89214F60D6B0C08AEC5E24618044127D /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5515D59D6E1D3498F849E428BAB977B /* Cartography.framework */; };
-		8B9BDE0236B4AB3F76C6B7D742A2FBC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */; };
-		A33E78335A9459EC83327D52001569C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */; };
-		A9E28A02CF230AC37A8C95FE07BFECFE /* NovaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42540F5F2277F8E7B71C217A3289EFCB /* NovaTime.swift */; };
-		B23E3B878363F72D1E874E46EB62FA7F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4B607FE766E112318593E18B18658 /* Size.swift */; };
-		B265CAB55D43481AB2EDDECD5382476A /* NovaBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4DD88B98802D971FB0FB6858AFA69 /* NovaBanner.swift */; };
-		B90891688A088BC37455234028C2E993 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 173CA4FAB49E3598A96DCBDED1120E7C /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B94BF30EA84B53749759775B2BA66341 /* Pods-NovaBannerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF38C8F55888E0128DC33FD4493DB2B9 /* Pods-NovaBannerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE2FC20F5EDBAE658F688978AB12C279 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FD32A2E739CE91B3A26FA50B4183A /* Extensions.swift */; };
-		C094F4E0DB02B9D711CEA0E7CF74FBE8 /* NovaCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA55D2B36463BDDB763A1386D1C238B9 /* NovaCore-dummy.m */; };
-		C3649839064E53A4BF767D2EF29651EF /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB7F8F8A30B82E76D0055EEEAD52393 /* Priority.swift */; };
-		D2C9087C6581055C25D5559F934AF65B /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8812863225FD728673E45C3232B759F /* Constrain.swift */; };
-		D3C01862D88692FA2E85A2D84345982B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB71369AE40D87CB894D4598F03FA50 /* Point.swift */; };
-		D56BD3B0ACF32790F3EF43EA3DB08016 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B9B38065F987C9BA9472CA28BA1373 /* Cartography-dummy.m */; };
-		E0C1A91CAE249523F32D43470F8B0430 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0012A77D8B15437A440405F5E9BCC /* UIColor.swift */; };
-		E1451AA498D7B41C4E049F5D9027B4A7 /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332B093C010870BE289EE3F9CE86650 /* ConstraintGroup.swift */; };
-		EAA0DC77F0A1071F72CDE3027726D9AC /* NovaCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A8D7B1EA01AC672D0428CBC3BAF9967 /* NovaCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB9E85B0CE6A53DCBDE040A716B5DBF8 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CC99B85D5D240F91B5A17BD9C2865 /* Property.swift */; };
-		EE94E3F06DA2F096BA43F0679567DC4B /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1739CE052645609F4E192A899AC34F /* Coefficients.swift */; };
-		F469BC9885602957FCB73DD39B5B92B0 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8006CE73E53F460E15E6B388A3DAD582 /* Constraint.swift */; };
-		F95ADCA0B85C6C0640372D3EFBBF1AD6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC091512FFD57E95A4C9D626CF58142 /* View.swift */; };
-		FCC862854F145CA7C45F959E79418EDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */; };
-		FD1EC81B92A353175EBFEB6B5D046E4B /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0931DB6FD2B9FD141108AF12DB03D /* UIButton.swift */; };
+		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663665626E48139E1270B9364A95830E /* View.swift */; };
+		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74CACBDB0CD9FE2017AFCE08D8742A /* Align.swift */; };
+		11CE40A7C0875CBF9173A16AC1ADCE24 /* NovaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16EF8F90ABDA8C23BD07F1A116F198 /* NovaTime.swift */; };
+		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73ADDCDFB5552641B5F5D37BC69CCAF /* LayoutProxy.swift */; };
+		1776C412D829FCBF17C2EEC3B5F49E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */; };
+		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCC7A38777B19AF4038E47CE76BA0E4 /* Priority.swift */; };
+		231C9C9BE25E709D047FE4C08474DAFB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8DAF5F889EDE6505F7AD442423430D /* UIImage.swift */; };
+		23EFD334E8FCF25A639BEB4B7A9CB85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */; };
+		302BAF539969A94038C5DAC7C52D1D9E /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5515D59D6E1D3498F849E428BAB977B /* Cartography.framework */; };
+		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4DA94D302E777A2106C20C3309D208 /* Constrain.swift */; };
+		461D06B76447C01A536DCEB20DE5D263 /* NovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4078481DDC11EBD2BF8885FCBCF60F /* NovaApp.swift */; };
+		464B596603004A83C518A791FF30EB13 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B6A9535475903ACC6AF0329B74036 /* UIColor.swift */; };
+		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DEB620E942B15294F14C14839DBB5 /* LayoutSupport.swift */; };
+		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F092C2D1FD3E8E0C1C51ECC3E8DC606F /* ConstraintGroup.swift */; };
+		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598950F7232BD9D1AA996910E32FE85 /* Compound.swift */; };
+		626D977AB33984E45C60D2823146AB18 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCE96FF28EA0F4AB6856EE00905095 /* Easing.swift */; };
+		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DCDE29A2AAA83C5BFD4D550ACDC63E /* Expression.swift */; };
+		6F4B7367A295DDC7553B5109A921A4E8 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D7CAE64D8523B7CAF355A827A8D4AC /* UIFont.swift */; };
+		6FBD4B684936450BD7CD0155347BB4EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */; };
+		704C50345598B226472E5211ED1B209F /* NovaBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23915F27A5AAFB9C7C78F6A4D78361E6 /* NovaBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47942CC53C00B0EA15C95AABA9C87D0 /* Size.swift */; };
+		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4904C82C9487DEF0D8BEB06C1F8BBE2D /* Distribute.swift */; };
+		7BB507DF631654B04C2D7584EA405AE4 /* NovaCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1FD2D4106FF159D9EEB621D5B7BF644 /* NovaCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EAD2FF87BD2DA842D6D612E23945152 /* NovaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A1E1CC270C9F39396C8C57D3A88F68 /* NovaCore.framework */; };
+		829C19BBD117452C5542678056D19B4E /* Pods-NovaBannerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C52595162DA53314CF948570AF37AB /* Pods-NovaBannerDemo-dummy.m */; };
+		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D7C9741EC1A538506420EE1867A9D /* Point.swift */; };
+		90F3643CB716B8C18814824161581619 /* Pods-NovaBannerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF38C8F55888E0128DC33FD4493DB2B9 /* Pods-NovaBannerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30108FE7D41ADC14023C97F6F835072F /* ViewUtils.swift */; };
+		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82125F3D642E763B4153B083AAC61B /* Context.swift */; };
+		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B798489D9DDE609EF6365612451F723 /* Edges.swift */; };
+		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10393868FF01EF3C8208A012F53286 /* Extensions.swift */; };
+		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4F472CBBE0FCCAD94C934D4A1665 /* Property.swift */; };
+		A81A681145D23A91AEE160646FA6E67E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */; };
+		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0265A11828BCB3C7181577D7E8F0007 /* Cartography-dummy.m */; };
+		B24163FA9DDBCEDEE509349A7FAAD9C9 /* NovaCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EF5D937D9ABAFF6351421D73482424 /* NovaCore-dummy.m */; };
+		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC63C5B77F2CD3A1D35450F7E4D4436 /* Constraint.swift */; };
+		C4A9586CD885252E9A9D4305D7918F8F /* NovaBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8976377714D0BC674127EB42FE00FA /* NovaBanner-dummy.m */; };
+		C697F4585B996F952CD90D1A900AD041 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424D517F94019CD5113083CB81080939 /* UIButton.swift */; };
+		CBA193B6E6F1263BFE4F601E3A57F58C /* NovaBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4DD88B98802D971FB0FB6858AFA69 /* NovaBanner.swift */; };
+		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD4707C15A2E6641572F2F5F9418CE /* Edge.swift */; };
+		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A0440D128715257EC50E13F7EE6AB /* Dimension.swift */; };
+		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF15191F4047CFE3D9AA974907C70787 /* Coefficients.swift */; };
+		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4864CB8BAB486BE520449FC6E9B78F62 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		83889CF53B52F4B1B2FA8B12ADC5793D /* PBXContainerItemProxy */ = {
+		2799CF7EA9D2C70F193E5B82741BE377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3A04698AAE4D6124C20602D622956E5;
+			remoteGlobalIDString = 38CA827ED88C205AE648669B4BB60D1F;
+			remoteInfo = NovaCore;
+		};
+		3163D7B35221E067C34FE1AFFF321562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544212980401A6DA7806F65EAD8C6637;
 			remoteInfo = Cartography;
 		};
-		8599354F8B18D94C3148FCCB23AE24C0 /* PBXContainerItemProxy */ = {
+		A51E9AE7C33D265220D34FA952FB5F85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 40A5842CCA8DFBFC3800E01A1F7B33D8;
+			remoteGlobalIDString = 8411F3997C92D995EBD81A3FF0B2486F;
 			remoteInfo = NovaBanner;
 		};
-		97C182FD2B7CF02F25966ADBE0F10239 /* PBXContainerItemProxy */ = {
+		C95B16489A8C5331AD4739E2ADF8D323 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DEE56FA79EB65808F606B7040A34482B;
+			remoteGlobalIDString = 38CA827ED88C205AE648669B4BB60D1F;
 			remoteInfo = NovaCore;
 		};
-		9AB8F7D988C8438F5BC9952F13BCEC2D /* PBXContainerItemProxy */ = {
+		FD53385AED03E6EA1E49EE0453456857 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3A04698AAE4D6124C20602D622956E5;
+			remoteGlobalIDString = 544212980401A6DA7806F65EAD8C6637;
 			remoteInfo = Cartography;
-		};
-		F12B8525742CBFA22079C905EB1C2BC2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEE56FA79EB65808F606B7040A34482B;
-			remoteInfo = NovaCore;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03A2425025A05E1D2055293E5BD883A3 /* Pods-NovaBannerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NovaBannerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		0429E1AD3E9A6F0CC0B994A8196F28CB /* NovaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NovaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B1739CE052645609F4E192A899AC34F /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
-		0B1ED462E738DAB4204454C8C59640E4 /* Pods-NovaBannerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NovaBannerDemo.modulemap"; sourceTree = "<group>"; };
+		0429E1AD3E9A6F0CC0B994A8196F28CB /* NovaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NovaCore.framework; path = NovaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		093A0440D128715257EC50E13F7EE6AB /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		0B1ED462E738DAB4204454C8C59640E4 /* Pods-NovaBannerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NovaBannerDemo.modulemap"; sourceTree = "<group>"; };
 		0CBC48D09C1DED855BE76060129D2923 /* NovaBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NovaBanner.xcconfig; sourceTree = "<group>"; };
 		0E8D7963C916D74CBFF5E4575EA59B18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		173CA4FAB49E3598A96DCBDED1120E7C /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
 		1A72801331955FCCC6D4D17FFF624BB3 /* NovaBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaBanner-prefix.pch"; sourceTree = "<group>"; };
-		1A9D7CC73CB9025651C1CE082EED6770 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
-		1F5EF010909C6DDC66768C43A1DF464B /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
 		23915F27A5AAFB9C7C78F6A4D78361E6 /* NovaBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaBanner-umbrella.h"; sourceTree = "<group>"; };
-		2AB9BF633CE62A7ADFE5BD139F40764E /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
-		2BB71369AE40D87CB894D4598F03FA50 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
-		2E9BC2518E0FCD4746A7F6F8795682C1 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = Source/Easing.swift; sourceTree = "<group>"; };
+		2BAD4707C15A2E6641572F2F5F9418CE /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		2BC63C5B77F2CD3A1D35450F7E4D4436 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		2E8DAF5F889EDE6505F7AD442423430D /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Source/UIImage.swift; sourceTree = "<group>"; };
+		30108FE7D41ADC14023C97F6F835072F /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		30661AC15C9BF87771489DB0338A5F03 /* NovaCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NovaCore.modulemap; sourceTree = "<group>"; };
 		31F4DD88B98802D971FB0FB6858AFA69 /* NovaBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NovaBanner.swift; sourceTree = "<group>"; };
-		42540F5F2277F8E7B71C217A3289EFCB /* NovaTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NovaTime.swift; path = Source/NovaTime.swift; sourceTree = "<group>"; };
-		4995BE32CAA78E595103C97D6BEADFFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49C751B2B534C20B45D514A9ED952984 /* NovaCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NovaCore.xcconfig; sourceTree = "<group>"; };
-		4CDDDE11D3FEB006F507D361F1612C7C /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
-		5065D16DD47DC73EFCB68829DB00A3E0 /* NovaCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NovaCore.modulemap; sourceTree = "<group>"; };
-		5A8D7B1EA01AC672D0428CBC3BAF9967 /* NovaCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaCore-umbrella.h"; sourceTree = "<group>"; };
+		36D7CAE64D8523B7CAF355A827A8D4AC /* UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = Source/UIFont.swift; sourceTree = "<group>"; };
+		3A16EF8F90ABDA8C23BD07F1A116F198 /* NovaTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NovaTime.swift; path = Source/NovaTime.swift; sourceTree = "<group>"; };
+		424D517F94019CD5113083CB81080939 /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = Source/UIButton.swift; sourceTree = "<group>"; };
+		43EF5D937D9ABAFF6351421D73482424 /* NovaCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NovaCore-dummy.m"; sourceTree = "<group>"; };
+		4864CB8BAB486BE520449FC6E9B78F62 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		4904C82C9487DEF0D8BEB06C1F8BBE2D /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		4CC83CAF13DCC82621EF4827C925825E /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		4E82125F3D642E763B4153B083AAC61B /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		4F74CACBDB0CD9FE2017AFCE08D8742A /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		509D783A92AE2B55E4F6E9CADA1154CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0B6A9535475903ACC6AF0329B74036 /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Source/UIColor.swift; sourceTree = "<group>"; };
 		5EF3DA1ED9E88A2FE413190D7C652F23 /* Pods-NovaBannerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NovaBannerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		623B6751D38448E6F2E2E92BC14FBC1E /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
-		67B0012A77D8B15437A440405F5E9BCC /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Source/UIColor.swift; sourceTree = "<group>"; };
+		5FEF4F472CBBE0FCCAD94C934D4A1665 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		663665626E48139E1270B9364A95830E /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		67DCDE29A2AAA83C5BFD4D550ACDC63E /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
 		6AADB315867D12B9A7CB049B3122DAA2 /* Pods-NovaBannerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NovaBannerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6B798489D9DDE609EF6365612451F723 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
 		71F155BC123CCD6EB4CA1835170663A6 /* Pods-NovaBannerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NovaBannerDemo-resources.sh"; sourceTree = "<group>"; };
-		779FD395336651F49F688F84371C1F26 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
-		7F3E21AB4D6CED1B4246B61EC45C6C31 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
-		8006CE73E53F460E15E6B388A3DAD582 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		80F970D8088C634E01A1CD9113317591 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Cartography.modulemap; sourceTree = "<group>"; };
-		87B9B38065F987C9BA9472CA28BA1373 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
-		892CC99B85D5D240F91B5A17BD9C2865 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
-		8C4FD32A2E739CE91B3A26FA50B4183A /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
-		8C6C652EF80CECB172C3694CBCE18187 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96BC4DC1D7AEDBD111E49A7E62183312 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7598950F7232BD9D1AA996910E32FE85 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8C6C652EF80CECB172C3694CBCE18187 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFAA7AE8EEA749092827A8C7B91B159 /* NovaCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NovaCore.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B0ABB34924997C389936D8E2D4BC5B7 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
+		9E4078481DDC11EBD2BF8885FCBCF60F /* NovaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NovaApp.swift; path = Source/NovaApp.swift; sourceTree = "<group>"; };
 		A5515D59D6E1D3498F849E428BAB977B /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A1E1CC270C9F39396C8C57D3A88F68 /* NovaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NovaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABB7F8F8A30B82E76D0055EEEAD52393 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		AA4DA94D302E777A2106C20C3309D208 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
 		AC684C1C14DAE7800FB85554DF18F24A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73ADDCDFB5552641B5F5D37BC69CCAF /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
 		B84978F50C6B0846D76C51F45C3C39FD /* Pods-NovaBannerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NovaBannerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		B8AA210B6D54ADDC103731604100B5CA /* NovaCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaCore-prefix.pch"; sourceTree = "<group>"; };
-		BA55D2B36463BDDB763A1386D1C238B9 /* NovaCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NovaCore-dummy.m"; sourceTree = "<group>"; };
-		BA9FAFA033EFE4F5804568CAD457744E /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
-		BAB2AE0090970127B4C2087028C5F60A /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		BD4D7C9741EC1A538506420EE1867A9D /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
 		BF38C8F55888E0128DC33FD4493DB2B9 /* Pods-NovaBannerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NovaBannerDemo-umbrella.h"; sourceTree = "<group>"; };
-		BFE2EEDBE9A93A2C94D56E7131CEF6EF /* NovaApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NovaApp.swift; path = Source/NovaApp.swift; sourceTree = "<group>"; };
+		C2BCE96FF28EA0F4AB6856EE00905095 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = Source/Easing.swift; sourceTree = "<group>"; };
 		C3C52595162DA53314CF948570AF37AB /* Pods-NovaBannerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NovaBannerDemo-dummy.m"; sourceTree = "<group>"; };
 		C508232516283DCFD447AA0227DE7BBD /* Pods-NovaBannerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NovaBannerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		C588DB54585BA69D7DB54B5835238DA5 /* NovaBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NovaBanner.modulemap; sourceTree = "<group>"; };
-		C61CCA960F229CFDCD97F748A3F0D61A /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Source/UIImage.swift; sourceTree = "<group>"; };
-		C8A0931DB6FD2B9FD141108AF12DB03D /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = Source/UIButton.swift; sourceTree = "<group>"; };
-		CBA3AF67CDF534E15BEE0BE436FE2B8F /* Pods_NovaBannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovaBannerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8812863225FD728673E45C3232B759F /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
-		DD408BD4982006713B87ADDCB7EE4CD3 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
-		DEC091512FFD57E95A4C9D626CF58142 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
-		E332B093C010870BE289EE3F9CE86650 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
-		F3714A07EB5718DE5351C77293A8D3CD /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
-		F845A4B799A732DBBB9C72C04C65FC0E /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
-		F999CAA597FAD649E303ED925398D6B1 /* NovaBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NovaBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCB4B607FE766E112318593E18B18658 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		C588DB54585BA69D7DB54B5835238DA5 /* NovaBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NovaBanner.modulemap; sourceTree = "<group>"; };
+		CBA3AF67CDF534E15BEE0BE436FE2B8F /* Pods_NovaBannerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NovaBannerDemo.framework; path = "Pods-NovaBannerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0265A11828BCB3C7181577D7E8F0007 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		D47942CC53C00B0EA15C95AABA9C87D0 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		D657B5088EC1A0D0B6840C0618B1DBB8 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		DF15191F4047CFE3D9AA974907C70787 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		E1FD2D4106FF159D9EEB621D5B7BF644 /* NovaCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaCore-umbrella.h"; sourceTree = "<group>"; };
+		E417EBD5B9DDE63E27CE67C9190A7F3D /* NovaCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NovaCore-prefix.pch"; sourceTree = "<group>"; };
+		F092C2D1FD3E8E0C1C51ECC3E8DC606F /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		F65217C1A910EB6DA5F8F2EB4F6ECB74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F999CAA597FAD649E303ED925398D6B1 /* NovaBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NovaBanner.framework; path = NovaBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCC7A38777B19AF4038E47CE76BA0E4 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
 		FD8976377714D0BC674127EB42FE00FA /* NovaBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NovaBanner-dummy.m"; sourceTree = "<group>"; };
+		FF10393868FF01EF3C8208A012F53286 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		FF5DEB620E942B15294F14C14839DBB5 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0820C8223239D5A807554B753C7CE28A /* Frameworks */ = {
+		276DB21371CB5222CD92C1059A655F54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC269E1EF179D53A0AFC3583B7B8E5F /* Foundation.framework in Frameworks */,
+				1776C412D829FCBF17C2EEC3B5F49E53 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20BAE21A8FA19BCE84D7C917A1B03FAE /* Frameworks */ = {
+		7A4AAE12E09D29DA5F684C9BD8B5FE3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89214F60D6B0C08AEC5E24618044127D /* Cartography.framework in Frameworks */,
-				FCC862854F145CA7C45F959E79418EDB /* Foundation.framework in Frameworks */,
-				73E36562854374C87E7789EA92417B2C /* NovaCore.framework in Frameworks */,
+				6FBD4B684936450BD7CD0155347BB4EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		429A34DF3BBD7321C9C7D6FBF5F1E3FB /* Frameworks */ = {
+		AA7A18008247D7BBCCB25FF4B9C14E94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33E78335A9459EC83327D52001569C9 /* Foundation.framework in Frameworks */,
+				23EFD334E8FCF25A639BEB4B7A9CB85F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D5AA8EFD94C3856E233582F0898DF59 /* Frameworks */ = {
+		C4330880C3DBDEFC995D159B653B9FA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9BDE0236B4AB3F76C6B7D742A2FBC1 /* Foundation.framework in Frameworks */,
+				302BAF539969A94038C5DAC7C52D1D9E /* Cartography.framework in Frameworks */,
+				A81A681145D23A91AEE160646FA6E67E /* Foundation.framework in Frameworks */,
+				7EAD2FF87BD2DA842D6D612E23945152 /* NovaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0119EE2C9EECCE0124177CA8A8351ED3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				509D783A92AE2B55E4F6E9CADA1154CE /* Info.plist */,
+				30661AC15C9BF87771489DB0338A5F03 /* NovaCore.modulemap */,
+				8DFAA7AE8EEA749092827A8C7B91B159 /* NovaCore.xcconfig */,
+				43EF5D937D9ABAFF6351421D73482424 /* NovaCore-dummy.m */,
+				E417EBD5B9DDE63E27CE67C9190A7F3D /* NovaCore-prefix.pch */,
+				E1FD2D4106FF159D9EEB621D5B7BF644 /* NovaCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NovaCore";
+			sourceTree = "<group>";
+		};
+		02ACA8AF121830CD303845ABC89DC832 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				4F74CACBDB0CD9FE2017AFCE08D8742A /* Align.swift */,
+				DF15191F4047CFE3D9AA974907C70787 /* Coefficients.swift */,
+				7598950F7232BD9D1AA996910E32FE85 /* Compound.swift */,
+				AA4DA94D302E777A2106C20C3309D208 /* Constrain.swift */,
+				2BC63C5B77F2CD3A1D35450F7E4D4436 /* Constraint.swift */,
+				F092C2D1FD3E8E0C1C51ECC3E8DC606F /* ConstraintGroup.swift */,
+				4E82125F3D642E763B4153B083AAC61B /* Context.swift */,
+				093A0440D128715257EC50E13F7EE6AB /* Dimension.swift */,
+				4904C82C9487DEF0D8BEB06C1F8BBE2D /* Distribute.swift */,
+				2BAD4707C15A2E6641572F2F5F9418CE /* Edge.swift */,
+				6B798489D9DDE609EF6365612451F723 /* Edges.swift */,
+				67DCDE29A2AAA83C5BFD4D550ACDC63E /* Expression.swift */,
+				FF10393868FF01EF3C8208A012F53286 /* Extensions.swift */,
+				B73ADDCDFB5552641B5F5D37BC69CCAF /* LayoutProxy.swift */,
+				FF5DEB620E942B15294F14C14839DBB5 /* LayoutSupport.swift */,
+				BD4D7C9741EC1A538506420EE1867A9D /* Point.swift */,
+				FCCC7A38777B19AF4038E47CE76BA0E4 /* Priority.swift */,
+				5FEF4F472CBBE0FCCAD94C934D4A1665 /* Property.swift */,
+				D47942CC53C00B0EA15C95AABA9C87D0 /* Size.swift */,
+				663665626E48139E1270B9364A95830E /* View.swift */,
+				30108FE7D41ADC14023C97F6F835072F /* ViewUtils.swift */,
+				27028ACB5BDAF7E3D0A3772139DD29CE /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
 		1E9D24666BB15F1B55FC52D494C0716C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,12 +254,52 @@
 			path = "Example/Pods/Target Support Files/NovaBanner";
 			sourceTree = "<group>";
 		};
+		27028ACB5BDAF7E3D0A3772139DD29CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B0ABB34924997C389936D8E2D4BC5B7 /* Cartography.modulemap */,
+				D657B5088EC1A0D0B6840C0618B1DBB8 /* Cartography.xcconfig */,
+				D0265A11828BCB3C7181577D7E8F0007 /* Cartography-dummy.m */,
+				4CC83CAF13DCC82621EF4827C925825E /* Cartography-prefix.pch */,
+				4864CB8BAB486BE520449FC6E9B78F62 /* Cartography-umbrella.h */,
+				F65217C1A910EB6DA5F8F2EB4F6ECB74 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
 		40816A56EFEF8C766623ECD019E7DCF7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				31F4DD88B98802D971FB0FB6858AFA69 /* NovaBanner.swift */,
 			);
+			name = Source;
 			path = Source;
+			sourceTree = "<group>";
+		};
+		424E54576BD6D4061FE6D0676F95281F /* NovaCore */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCE96FF28EA0F4AB6856EE00905095 /* Easing.swift */,
+				9E4078481DDC11EBD2BF8885FCBCF60F /* NovaApp.swift */,
+				3A16EF8F90ABDA8C23BD07F1A116F198 /* NovaTime.swift */,
+				424D517F94019CD5113083CB81080939 /* UIButton.swift */,
+				5D0B6A9535475903ACC6AF0329B74036 /* UIColor.swift */,
+				36D7CAE64D8523B7CAF355A827A8D4AC /* UIFont.swift */,
+				2E8DAF5F889EDE6505F7AD442423430D /* UIImage.swift */,
+				0119EE2C9EECCE0124177CA8A8351ED3 /* Support Files */,
+			);
+			name = NovaCore;
+			path = NovaCore;
+			sourceTree = "<group>";
+		};
+		475795A0A32BADE76DFBA3C490152F3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02ACA8AF121830CD303845ABC89DC832 /* Cartography */,
+				424E54576BD6D4061FE6D0676F95281F /* NovaCore */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		558F03FD1790A63EB2AD931AAF23AC6E /* Pods-NovaBannerDemo */ = {
@@ -232,75 +320,16 @@
 			path = "Target Support Files/Pods-NovaBannerDemo";
 			sourceTree = "<group>";
 		};
-		56C0A00BEB9100E45900E14B8EC8EDCB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				63AB3E62861DBFB551884ED2C5E64989 /* Cartography */,
-				878C4D88D455E7F8D74DCAE7C36F4DFD /* NovaCore */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		62EBCAF021AEA7417D12E1DE403D1A02 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A1C5A3736AC9948D1ED0BA0E677D095E /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		63AB3E62861DBFB551884ED2C5E64989 /* Cartography */ = {
-			isa = PBXGroup;
-			children = (
-				2AB9BF633CE62A7ADFE5BD139F40764E /* Align.swift */,
-				0B1739CE052645609F4E192A899AC34F /* Coefficients.swift */,
-				F3714A07EB5718DE5351C77293A8D3CD /* Compound.swift */,
-				D8812863225FD728673E45C3232B759F /* Constrain.swift */,
-				8006CE73E53F460E15E6B388A3DAD582 /* Constraint.swift */,
-				E332B093C010870BE289EE3F9CE86650 /* ConstraintGroup.swift */,
-				623B6751D38448E6F2E2E92BC14FBC1E /* Context.swift */,
-				BAB2AE0090970127B4C2087028C5F60A /* Dimension.swift */,
-				4CDDDE11D3FEB006F507D361F1612C7C /* Distribute.swift */,
-				BA9FAFA033EFE4F5804568CAD457744E /* Edge.swift */,
-				779FD395336651F49F688F84371C1F26 /* Edges.swift */,
-				DD408BD4982006713B87ADDCB7EE4CD3 /* Expression.swift */,
-				8C4FD32A2E739CE91B3A26FA50B4183A /* Extensions.swift */,
-				F845A4B799A732DBBB9C72C04C65FC0E /* LayoutProxy.swift */,
-				2BB71369AE40D87CB894D4598F03FA50 /* Point.swift */,
-				ABB7F8F8A30B82E76D0055EEEAD52393 /* Priority.swift */,
-				892CC99B85D5D240F91B5A17BD9C2865 /* Property.swift */,
-				FCB4B607FE766E112318593E18B18658 /* Size.swift */,
-				DEC091512FFD57E95A4C9D626CF58142 /* View.swift */,
-				7F3E21AB4D6CED1B4246B61EC45C6C31 /* ViewUtils.swift */,
-				B9F1E67D9A6489C0107843E98D269F0B /* Support Files */,
-			);
-			path = Cartography;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				888DC0A2427E6BBB62B9BB7EDE936E40 /* Development Pods */,
 				FC96B289EAF103A288AE09B54091ED94 /* Frameworks */,
-				56C0A00BEB9100E45900E14B8EC8EDCB /* Pods */,
+				475795A0A32BADE76DFBA3C490152F3D /* Pods */,
 				C38E4565359FEEB2100FF6C66CE2513F /* Products */,
 				F5C7AC81AB1834BA64DF6FD4354F32B9 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		878C4D88D455E7F8D74DCAE7C36F4DFD /* NovaCore */ = {
-			isa = PBXGroup;
-			children = (
-				2E9BC2518E0FCD4746A7F6F8795682C1 /* Easing.swift */,
-				BFE2EEDBE9A93A2C94D56E7131CEF6EF /* NovaApp.swift */,
-				42540F5F2277F8E7B71C217A3289EFCB /* NovaTime.swift */,
-				C8A0931DB6FD2B9FD141108AF12DB03D /* UIButton.swift */,
-				67B0012A77D8B15437A440405F5E9BCC /* UIColor.swift */,
-				C61CCA960F229CFDCD97F748A3F0D61A /* UIImage.swift */,
-				E9C05FA682DBE0DF41502AE48AD6A74C /* Support Files */,
-			);
-			path = NovaCore;
 			sourceTree = "<group>";
 		};
 		888DC0A2427E6BBB62B9BB7EDE936E40 /* Development Pods */ = {
@@ -321,20 +350,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B9F1E67D9A6489C0107843E98D269F0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				80F970D8088C634E01A1CD9113317591 /* Cartography.modulemap */,
-				1F5EF010909C6DDC66768C43A1DF464B /* Cartography.xcconfig */,
-				87B9B38065F987C9BA9472CA28BA1373 /* Cartography-dummy.m */,
-				1A9D7CC73CB9025651C1CE082EED6770 /* Cartography-prefix.pch */,
-				173CA4FAB49E3598A96DCBDED1120E7C /* Cartography-umbrella.h */,
-				4995BE32CAA78E595103C97D6BEADFFF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Cartography";
-			sourceTree = "<group>";
-		};
 		C38E4565359FEEB2100FF6C66CE2513F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,18 +361,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9C05FA682DBE0DF41502AE48AD6A74C /* Support Files */ = {
+		F5761A6FA46C8608E253F4D69D0C90D9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				96BC4DC1D7AEDBD111E49A7E62183312 /* Info.plist */,
-				5065D16DD47DC73EFCB68829DB00A3E0 /* NovaCore.modulemap */,
-				49C751B2B534C20B45D514A9ED952984 /* NovaCore.xcconfig */,
-				BA55D2B36463BDDB763A1386D1C238B9 /* NovaCore-dummy.m */,
-				B8AA210B6D54ADDC103731604100B5CA /* NovaCore-prefix.pch */,
-				5A8D7B1EA01AC672D0428CBC3BAF9967 /* NovaCore-umbrella.h */,
+				7E56550AACD01C2BB23AE38EEFFF9C66 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NovaCore";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F5C7AC81AB1834BA64DF6FD4354F32B9 /* Targets Support Files */ = {
@@ -373,7 +382,7 @@
 			children = (
 				A5515D59D6E1D3498F849E428BAB977B /* Cartography.framework */,
 				A8A1E1CC270C9F39396C8C57D3A88F68 /* NovaCore.framework */,
-				62EBCAF021AEA7417D12E1DE403D1A02 /* iOS */,
+				F5761A6FA46C8608E253F4D69D0C90D9 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,104 +390,48 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		514705BF944036B79FA99816C564643C /* Headers */ = {
+		7707C9EBD5507D6BA0275201EF01F001 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90891688A088BC37455234028C2E993 /* Cartography-umbrella.h in Headers */,
+				7BB507DF631654B04C2D7584EA405AE4 /* NovaCore-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6476BA1441918F25B59CAF4FEDF333BE /* Headers */ = {
+		869FEC383E6C9FEA6B8CF930D8598096 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA0DC77F0A1071F72CDE3027726D9AC /* NovaCore-umbrella.h in Headers */,
+				704C50345598B226472E5211ED1B209F /* NovaBanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2DBEB948E3BF0C7F69F715EC27D93A5 /* Headers */ = {
+		BF1C5B82FD1F43141EB575D3EF4331D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B94BF30EA84B53749759775B2BA66341 /* Pods-NovaBannerDemo-umbrella.h in Headers */,
+				90F3643CB716B8C18814824161581619 /* Pods-NovaBannerDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A84116B055A95BE1F778051A54717C12 /* Headers */ = {
+		E66E0C3AA6C50C06CA3BC63165901BDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D92D3534593AF09997B9DA5721703F /* NovaBanner-umbrella.h in Headers */,
+				FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E7F6F2953D494325D9BB1E243F3E0D9 /* Pods-NovaBannerDemo */ = {
+		38CA827ED88C205AE648669B4BB60D1F /* NovaCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC8CDEFEAC2E93F656F60A8AA793A81B /* Build configuration list for PBXNativeTarget "Pods-NovaBannerDemo" */;
+			buildConfigurationList = CD2620590306190DB1AF7CBCAD5C7C89 /* Build configuration list for PBXNativeTarget "NovaCore" */;
 			buildPhases = (
-				C6196A6641B89A7DB6275CEEF9896034 /* Sources */,
-				0820C8223239D5A807554B753C7CE28A /* Frameworks */,
-				A2DBEB948E3BF0C7F69F715EC27D93A5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D55AB46624B37B1013A6C256014B497 /* PBXTargetDependency */,
-				2B862AFF35667E50483EF773C8692257 /* PBXTargetDependency */,
-				08FF72AF63EAF4AC40300F704DEE3776 /* PBXTargetDependency */,
-			);
-			name = "Pods-NovaBannerDemo";
-			productName = "Pods-NovaBannerDemo";
-			productReference = CBA3AF67CDF534E15BEE0BE436FE2B8F /* Pods_NovaBannerDemo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		40A5842CCA8DFBFC3800E01A1F7B33D8 /* NovaBanner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7599722DF915E8098FD74AA24E141E16 /* Build configuration list for PBXNativeTarget "NovaBanner" */;
-			buildPhases = (
-				34F593BF23F883D431593AE173FF6A10 /* Sources */,
-				20BAE21A8FA19BCE84D7C917A1B03FAE /* Frameworks */,
-				A84116B055A95BE1F778051A54717C12 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A2D76159D560DA22C6BB1B98ED8258D7 /* PBXTargetDependency */,
-				1387F7B3A658901DD7FC505D6A915937 /* PBXTargetDependency */,
-			);
-			name = NovaBanner;
-			productName = NovaBanner;
-			productReference = F999CAA597FAD649E303ED925398D6B1 /* NovaBanner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C3A04698AAE4D6124C20602D622956E5 /* Cartography */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B22DC939D187391042315573DBEE7623 /* Build configuration list for PBXNativeTarget "Cartography" */;
-			buildPhases = (
-				B962ED42E882856B9D168260BB18AE95 /* Sources */,
-				429A34DF3BBD7321C9C7D6FBF5F1E3FB /* Frameworks */,
-				514705BF944036B79FA99816C564643C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Cartography;
-			productName = Cartography;
-			productReference = 8C6C652EF80CECB172C3694CBCE18187 /* Cartography.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DEE56FA79EB65808F606B7040A34482B /* NovaCore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1FA9689E4DC249CFC17667AFAEC69C70 /* Build configuration list for PBXNativeTarget "NovaCore" */;
-			buildPhases = (
-				15B179A4089E3BB2E6AF65475D62FE41 /* Sources */,
-				5D5AA8EFD94C3856E233582F0898DF59 /* Frameworks */,
-				6476BA1441918F25B59CAF4FEDF333BE /* Headers */,
+				77155FAA1B168F04BECBEE0DC7CB67CF /* Sources */,
+				276DB21371CB5222CD92C1059A655F54 /* Frameworks */,
+				7707C9EBD5507D6BA0275201EF01F001 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -489,13 +442,69 @@
 			productReference = 0429E1AD3E9A6F0CC0B994A8196F28CB /* NovaCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		544212980401A6DA7806F65EAD8C6637 /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4640A3FD22DAF78390468CA450BB29DA /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				F8A87B475BE2E0CA1FFEC5F03DEDB801 /* Sources */,
+				7A4AAE12E09D29DA5F684C9BD8B5FE3B /* Frameworks */,
+				E66E0C3AA6C50C06CA3BC63165901BDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = 8C6C652EF80CECB172C3694CBCE18187 /* Cartography.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8411F3997C92D995EBD81A3FF0B2486F /* NovaBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7766702AF42654531EEA4C2D426744 /* Build configuration list for PBXNativeTarget "NovaBanner" */;
+			buildPhases = (
+				785584E2D10E0D6B11A7FB7BDEF18E94 /* Sources */,
+				C4330880C3DBDEFC995D159B653B9FA3 /* Frameworks */,
+				869FEC383E6C9FEA6B8CF930D8598096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE04A31F918981785BAE6F5A991BA91E /* PBXTargetDependency */,
+				EA6E726049D75D58B3379792282594F3 /* PBXTargetDependency */,
+			);
+			name = NovaBanner;
+			productName = NovaBanner;
+			productReference = F999CAA597FAD649E303ED925398D6B1 /* NovaBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE4F4BA30A1570D2C271CF80498BC60D /* Pods-NovaBannerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5349DD455957F893E1C2270EBEB58FB5 /* Build configuration list for PBXNativeTarget "Pods-NovaBannerDemo" */;
+			buildPhases = (
+				8490D017AA13BE893C51CE4ED40B1455 /* Sources */,
+				AA7A18008247D7BBCCB25FF4B9C14E94 /* Frameworks */,
+				BF1C5B82FD1F43141EB575D3EF4331D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AACDA0F92D5584C229E47CE536943C49 /* PBXTargetDependency */,
+				A4B5E153BAF09AFBAEFC89E1755F42DD /* PBXTargetDependency */,
+				28E3B2FF3D504AEA7013C1860786AF47 /* PBXTargetDependency */,
+			);
+			name = "Pods-NovaBannerDemo";
+			productName = "Pods-NovaBannerDemo";
+			productReference = CBA3AF67CDF534E15BEE0BE436FE2B8F /* Pods_NovaBannerDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -510,206 +519,155 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3A04698AAE4D6124C20602D622956E5 /* Cartography */,
-				40A5842CCA8DFBFC3800E01A1F7B33D8 /* NovaBanner */,
-				DEE56FA79EB65808F606B7040A34482B /* NovaCore */,
-				2E7F6F2953D494325D9BB1E243F3E0D9 /* Pods-NovaBannerDemo */,
+				544212980401A6DA7806F65EAD8C6637 /* Cartography */,
+				8411F3997C92D995EBD81A3FF0B2486F /* NovaBanner */,
+				38CA827ED88C205AE648669B4BB60D1F /* NovaCore */,
+				DE4F4BA30A1570D2C271CF80498BC60D /* Pods-NovaBannerDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		15B179A4089E3BB2E6AF65475D62FE41 /* Sources */ = {
+		77155FAA1B168F04BECBEE0DC7CB67CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BAEE84C87FAA78365B69E0BED8C9064 /* Easing.swift in Sources */,
-				1AE88163C63BABEB06B87CC2EB20AE8D /* NovaApp.swift in Sources */,
-				C094F4E0DB02B9D711CEA0E7CF74FBE8 /* NovaCore-dummy.m in Sources */,
-				A9E28A02CF230AC37A8C95FE07BFECFE /* NovaTime.swift in Sources */,
-				FD1EC81B92A353175EBFEB6B5D046E4B /* UIButton.swift in Sources */,
-				E0C1A91CAE249523F32D43470F8B0430 /* UIColor.swift in Sources */,
-				193D22FD025E8F2AB2C7A9764224DF09 /* UIImage.swift in Sources */,
+				626D977AB33984E45C60D2823146AB18 /* Easing.swift in Sources */,
+				461D06B76447C01A536DCEB20DE5D263 /* NovaApp.swift in Sources */,
+				B24163FA9DDBCEDEE509349A7FAAD9C9 /* NovaCore-dummy.m in Sources */,
+				11CE40A7C0875CBF9173A16AC1ADCE24 /* NovaTime.swift in Sources */,
+				C697F4585B996F952CD90D1A900AD041 /* UIButton.swift in Sources */,
+				464B596603004A83C518A791FF30EB13 /* UIColor.swift in Sources */,
+				6F4B7367A295DDC7553B5109A921A4E8 /* UIFont.swift in Sources */,
+				231C9C9BE25E709D047FE4C08474DAFB /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34F593BF23F883D431593AE173FF6A10 /* Sources */ = {
+		785584E2D10E0D6B11A7FB7BDEF18E94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62C027FEF67583E7C94F080DF2F6A888 /* NovaBanner-dummy.m in Sources */,
-				B265CAB55D43481AB2EDDECD5382476A /* NovaBanner.swift in Sources */,
+				C4A9586CD885252E9A9D4305D7918F8F /* NovaBanner-dummy.m in Sources */,
+				CBA193B6E6F1263BFE4F601E3A57F58C /* NovaBanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B962ED42E882856B9D168260BB18AE95 /* Sources */ = {
+		8490D017AA13BE893C51CE4ED40B1455 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584B68A7069844742AEF67ED9311FF50 /* Align.swift in Sources */,
-				D56BD3B0ACF32790F3EF43EA3DB08016 /* Cartography-dummy.m in Sources */,
-				EE94E3F06DA2F096BA43F0679567DC4B /* Coefficients.swift in Sources */,
-				28515F6FFAA0E2F9591A862D532F33AC /* Compound.swift in Sources */,
-				D2C9087C6581055C25D5559F934AF65B /* Constrain.swift in Sources */,
-				F469BC9885602957FCB73DD39B5B92B0 /* Constraint.swift in Sources */,
-				E1451AA498D7B41C4E049F5D9027B4A7 /* ConstraintGroup.swift in Sources */,
-				452C09D0CAC1F8286ABA1CE076033B23 /* Context.swift in Sources */,
-				0729DED1737DCDB309394E0B59393F37 /* Dimension.swift in Sources */,
-				369CA2AACEED2517C99D77D7700DFCEA /* Distribute.swift in Sources */,
-				2057FF930EF0F28E7AD548BF23BE78EE /* Edge.swift in Sources */,
-				5044CA9F7CCBB02F3C294106022FCF9F /* Edges.swift in Sources */,
-				7CD04D81B5ED213A105DFC517187EB87 /* Expression.swift in Sources */,
-				BE2FC20F5EDBAE658F688978AB12C279 /* Extensions.swift in Sources */,
-				8378B61D28075525380201114F6E4582 /* LayoutProxy.swift in Sources */,
-				D3C01862D88692FA2E85A2D84345982B /* Point.swift in Sources */,
-				C3649839064E53A4BF767D2EF29651EF /* Priority.swift in Sources */,
-				EB9E85B0CE6A53DCBDE040A716B5DBF8 /* Property.swift in Sources */,
-				B23E3B878363F72D1E874E46EB62FA7F /* Size.swift in Sources */,
-				F95ADCA0B85C6C0640372D3EFBBF1AD6 /* View.swift in Sources */,
-				48ADE3FB3F30FCA5893083351449DA98 /* ViewUtils.swift in Sources */,
+				829C19BBD117452C5542678056D19B4E /* Pods-NovaBannerDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6196A6641B89A7DB6275CEEF9896034 /* Sources */ = {
+		F8A87B475BE2E0CA1FFEC5F03DEDB801 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DA110C0A83A1951586ADA6CB05CAF0B /* Pods-NovaBannerDemo-dummy.m in Sources */,
+				067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */,
+				AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */,
+				FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */,
+				5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */,
+				3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */,
+				C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */,
+				5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */,
+				9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */,
+				DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */,
+				7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */,
+				CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */,
+				A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */,
+				697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */,
+				A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */,
+				1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */,
+				56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */,
+				88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */,
+				22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */,
+				A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */,
+				74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */,
+				05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */,
+				9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08FF72AF63EAF4AC40300F704DEE3776 /* PBXTargetDependency */ = {
+		28E3B2FF3D504AEA7013C1860786AF47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NovaCore;
-			target = DEE56FA79EB65808F606B7040A34482B /* NovaCore */;
-			targetProxy = 97C182FD2B7CF02F25966ADBE0F10239 /* PBXContainerItemProxy */;
+			target = 38CA827ED88C205AE648669B4BB60D1F /* NovaCore */;
+			targetProxy = C95B16489A8C5331AD4739E2ADF8D323 /* PBXContainerItemProxy */;
 		};
-		1387F7B3A658901DD7FC505D6A915937 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NovaCore;
-			target = DEE56FA79EB65808F606B7040A34482B /* NovaCore */;
-			targetProxy = F12B8525742CBFA22079C905EB1C2BC2 /* PBXContainerItemProxy */;
-		};
-		2B862AFF35667E50483EF773C8692257 /* PBXTargetDependency */ = {
+		A4B5E153BAF09AFBAEFC89E1755F42DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NovaBanner;
-			target = 40A5842CCA8DFBFC3800E01A1F7B33D8 /* NovaBanner */;
-			targetProxy = 8599354F8B18D94C3148FCCB23AE24C0 /* PBXContainerItemProxy */;
+			target = 8411F3997C92D995EBD81A3FF0B2486F /* NovaBanner */;
+			targetProxy = A51E9AE7C33D265220D34FA952FB5F85 /* PBXContainerItemProxy */;
 		};
-		3D55AB46624B37B1013A6C256014B497 /* PBXTargetDependency */ = {
+		AACDA0F92D5584C229E47CE536943C49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cartography;
-			target = C3A04698AAE4D6124C20602D622956E5 /* Cartography */;
-			targetProxy = 9AB8F7D988C8438F5BC9952F13BCEC2D /* PBXContainerItemProxy */;
+			target = 544212980401A6DA7806F65EAD8C6637 /* Cartography */;
+			targetProxy = 3163D7B35221E067C34FE1AFFF321562 /* PBXContainerItemProxy */;
 		};
-		A2D76159D560DA22C6BB1B98ED8258D7 /* PBXTargetDependency */ = {
+		AE04A31F918981785BAE6F5A991BA91E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cartography;
-			target = C3A04698AAE4D6124C20602D622956E5 /* Cartography */;
-			targetProxy = 83889CF53B52F4B1B2FA8B12ADC5793D /* PBXContainerItemProxy */;
+			target = 544212980401A6DA7806F65EAD8C6637 /* Cartography */;
+			targetProxy = FD53385AED03E6EA1E49EE0453456857 /* PBXContainerItemProxy */;
+		};
+		EA6E726049D75D58B3379792282594F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NovaCore;
+			target = 38CA827ED88C205AE648669B4BB60D1F /* NovaCore */;
+			targetProxy = 2799CF7EA9D2C70F193E5B82741BE377 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A79383A54B487E28E4C302C30B4220A /* Release */ = {
+		04D09DE9CE6866D1B29473EE305681EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F5EF010909C6DDC66768C43A1DF464B /* Cartography.xcconfig */;
+			baseConfigurationReference = 8DFAA7AE8EEA749092827A8C7B91B159 /* NovaCore.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NovaCore/NovaCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NovaCore/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Cartography;
+				MODULEMAP_FILE = "Target Support Files/NovaCore/NovaCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NovaCore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		1C68CF775643D0E7757D4104F0983255 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03A2425025A05E1D2055293E5BD883A3 /* Pods-NovaBannerDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NovaBannerDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NovaBannerDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51732E85DE7BE9D10119FEA2CDE58031 /* Release */ = {
+		08CDF19F43ACAF3DB29B4F5C51697958 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0CBC48D09C1DED855BE76060129D2923 /* NovaBanner.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NovaBanner/NovaBanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NovaBanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NovaBanner/NovaBanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = NovaBanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		57987D367FC5358ECF273D7BB14BFB89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CBC48D09C1DED855BE76060129D2923 /* NovaBanner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -721,127 +679,62 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NovaBanner/NovaBanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NovaBanner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NovaBanner/NovaBanner.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = NovaBanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		6FD823741523B6BBA156FD2A31130E50 /* Release */ = {
+		3B0E51EAA591C50B4FA5DE72A6A90BFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CBC48D09C1DED855BE76060129D2923 /* NovaBanner.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NovaBanner/NovaBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NovaBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NovaBanner/NovaBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NovaBanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A4474F4BF89516A6E746D29B9E73DC03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F5EF010909C6DDC66768C43A1DF464B /* Cartography.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Cartography;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E298654DE5D22B9011562BD7E69ADB62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AADB315867D12B9A7CB049B3122DAA2 /* Pods-NovaBannerDemo.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NovaBannerDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NovaBannerDemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EE3433E81723238FDF523A9838FEC7BD /* Debug */ = {
+		507EA1A2C854D911E61D1549FCCF7E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -849,12 +742,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -874,16 +771,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		F35A83AF72F1F75C3451A6ABF79848AE /* Release */ = {
+		68340A9A84F0CFAC20797B1DCFFF6A4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C751B2B534C20B45D514A9ED952984 /* NovaCore.xcconfig */;
+			baseConfigurationReference = 8DFAA7AE8EEA749092827A8C7B91B159 /* NovaCore.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -895,24 +796,29 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NovaCore/NovaCore-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NovaCore/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NovaCore/NovaCore.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = NovaCore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		F39DAE8AFDE0F239A47C114AAC197224 /* Debug */ = {
+		698EBE4518A1EC9363829447CB9F4FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C751B2B534C20B45D514A9ED952984 /* NovaCore.xcconfig */;
+			baseConfigurationReference = 6AADB315867D12B9A7CB049B3122DAA2 /* Pods-NovaBannerDemo.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -921,67 +827,224 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NovaCore/NovaCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NovaCore/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-NovaBannerDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NovaCore/NovaCore.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NovaCore;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NovaBannerDemo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		BC3BC4399C3B6E3101028FB58D9870C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDABA3FAF29CBE392FA75D88C6B24B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D657B5088EC1A0D0B6840C0618B1DBB8 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D232DC264C94DBB363100A9AD9D51A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D657B5088EC1A0D0B6840C0618B1DBB8 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE874C214A9908F857EBA87EC2639F1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A2425025A05E1D2055293E5BD883A3 /* Pods-NovaBannerDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NovaBannerDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NovaBannerDemo/Pods-NovaBannerDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NovaBannerDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FA9689E4DC249CFC17667AFAEC69C70 /* Build configuration list for PBXNativeTarget "NovaCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F39DAE8AFDE0F239A47C114AAC197224 /* Debug */,
-				F35A83AF72F1F75C3451A6ABF79848AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE3433E81723238FDF523A9838FEC7BD /* Debug */,
-				6FD823741523B6BBA156FD2A31130E50 /* Release */,
+				507EA1A2C854D911E61D1549FCCF7E68 /* Debug */,
+				BC3BC4399C3B6E3101028FB58D9870C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7599722DF915E8098FD74AA24E141E16 /* Build configuration list for PBXNativeTarget "NovaBanner" */ = {
+		4640A3FD22DAF78390468CA450BB29DA /* Build configuration list for PBXNativeTarget "Cartography" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57987D367FC5358ECF273D7BB14BFB89 /* Debug */,
-				51732E85DE7BE9D10119FEA2CDE58031 /* Release */,
+				BDABA3FAF29CBE392FA75D88C6B24B47 /* Debug */,
+				D232DC264C94DBB363100A9AD9D51A0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B22DC939D187391042315573DBEE7623 /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+		5349DD455957F893E1C2270EBEB58FB5 /* Build configuration list for PBXNativeTarget "Pods-NovaBannerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4474F4BF89516A6E746D29B9E73DC03 /* Debug */,
-				1A79383A54B487E28E4C302C30B4220A /* Release */,
+				698EBE4518A1EC9363829447CB9F4FBD /* Debug */,
+				FE874C214A9908F857EBA87EC2639F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC8CDEFEAC2E93F656F60A8AA793A81B /* Build configuration list for PBXNativeTarget "Pods-NovaBannerDemo" */ = {
+		8E7766702AF42654531EEA4C2D426744 /* Build configuration list for PBXNativeTarget "NovaBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E298654DE5D22B9011562BD7E69ADB62 /* Debug */,
-				1C68CF775643D0E7757D4104F0983255 /* Release */,
+				08CDF19F43ACAF3DB29B4F5C51697958 /* Debug */,
+				3B0E51EAA591C50B4FA5DE72A6A90BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2620590306190DB1AF7CBCAD5C7C89 /* Build configuration list for PBXNativeTarget "NovaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D09DE9CE6866D1B29473EE305681EB /* Debug */,
+				68340A9A84F0CFAC20797B1DCFFF6A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

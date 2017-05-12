@@ -1,28 +1,29 @@
 {
   "name": "NovaBanner",
-  "version": "0.1",
-  "license": {
-    "type": "MIT"
-  },
+  "version": "0.2",
+  "summary": "Another Banner Package. Because.",
   "homepage": "https://github.com/netizen01/NovaBanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "Netizen01": "n01@invco.de"
   },
-  "summary": "Another Banner Package. Because.",
+  "platforms": {
+    "ios": "8.2"
+  },
   "source": {
     "git": "https://github.com/netizen01/NovaBanner.git",
-    "tag": "0.1"
+    "tag": "0.2"
   },
   "source_files": "Source/**/*.swift",
   "dependencies": {
     "NovaCore": [
-      "~> 0.1"
+
     ],
     "Cartography": [
-      "~> 0.6"
+
     ]
-  },
-  "platforms": {
-    "ios": "8.4"
   }
 }
