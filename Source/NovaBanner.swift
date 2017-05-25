@@ -94,6 +94,7 @@ open class NovaBanner: NSObject {
             bannerWindow?.tintColor = UIApplication.shared.delegate?.window??.tintColor
             bannerWindow?.rootViewController = viewController
             bannerWindow?.isHidden = false
+            bannerWindow?.layoutIfNeeded()
         }
         
         if let duration = duration, duration > 0 {
