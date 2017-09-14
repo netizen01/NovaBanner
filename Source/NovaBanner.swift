@@ -125,7 +125,7 @@ open class NovaBanner: NSObject {
         viewController.banner = nil
     }
     
-    func autoDismissTimer(_ timer: Timer) {
+    @objc func autoDismissTimer(_ timer: Timer) {
         dismiss()
     }
     
@@ -229,7 +229,7 @@ class NovaBannerViewController: UIViewController {
     }
     
     
-    func tapGestureHandler(_ gesture: UITapGestureRecognizer) {
+    @objc func tapGestureHandler(_ gesture: UITapGestureRecognizer) {
         if bannerView.hitTest(gesture.location(in: bannerView), with: nil) != nil {
             gesture.isEnabled = false
             banner.tapHandler?(banner)
@@ -268,8 +268,8 @@ class NovaBannerView: UIView {
         subtitleLabel.textAlignment = .left
         
         imageView.contentMode = .scaleAspectFit
-        imageView.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: .horizontal)
-        imageView.setContentHuggingPriority(UILayoutPriorityRequired, for: .horizontal)
+        imageView.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
+        imageView.setContentHuggingPriority(UILayoutPriority.required, for: .horizontal)
         
         titleLabel.adjustsFontSizeToFitWidth = true
         titleLabel.minimumScaleFactor = 0.5
