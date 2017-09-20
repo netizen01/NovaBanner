@@ -12,7 +12,7 @@ class ViewController: UIViewController {
         
         NovaBanner(title: "Demo Banner", subtitle: "Subtitle Text", type: NovaBanner.BannerType.default, image: UIImage(named: "whale"), tapped: { banner in
             print("Banner Tapped")
-        }) { banner in
+        }) {
             print("Banner Dismissed")
         }.show()
         

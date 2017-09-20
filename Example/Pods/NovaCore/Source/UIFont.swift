@@ -10,12 +10,12 @@ extension UIFont {
     public func monospace() -> UIFont {
         let features = [
             [
-                UIFontFeatureTypeIdentifierKey: kNumberSpacingType,
-                UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector
+                UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
+                UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector
             ]
         ]
         let monoDescriptor = fontDescriptor.addingAttributes(
-            [UIFontDescriptorFeatureSettingsAttribute: features]
+            [UIFontDescriptor.AttributeName.featureSettings: features]
         )
         return UIFont(descriptor: monoDescriptor, size: pointSize)
     }

@@ -61,8 +61,7 @@ extension UIColor {
         var alpha: CGFloat = 1.0
         
         if rgba.hasPrefix("#") {
-            let index = rgba.characters.index(rgba.startIndex, offsetBy: 1)
-            let hex = rgba.substring(from: index)
+            let hex = String(rgba.dropFirst())
             let scanner = Scanner(string: hex)
             var hexValue: CUnsignedLongLong = 0
             if scanner.scanHexInt64(&hexValue) {
@@ -116,18 +115,24 @@ extension UIColor {
     /// - parameter amount: The amount (0-1) to mix the new color in.
     /// - returns: A new UIColor instance representing the resulting color
     public func mixWithColor(_ color: UIColor, amount: Float) -> UIColor {
-        var comp1: [CGFloat] = Array(repeating: 0, count: 4);
-        self.getRed(&comp1[0], green: &comp1[1], blue: &comp1[2], alpha: &comp1[3])
+        var comp1r: CGFloat = 0
+        var comp1g: CGFloat = 0
+        var comp1b: CGFloat = 0
+        var comp1a: CGFloat = 0
+        self.getRed(&comp1r, green: &comp1g, blue: &comp1b, alpha: &comp1a)
         
-        var comp2: [CGFloat] = Array(repeating: 0, count: 4);
-        color.getRed(&comp2[0], green: &comp2[1], blue: &comp2[2], alpha: &comp2[3])
+        var comp2r: CGFloat = 0
+        var comp2g: CGFloat = 0
+        var comp2b: CGFloat = 0
+        var comp2a: CGFloat = 0
+        color.getRed(&comp2r, green: &comp2g, blue: &comp2b, alpha: &comp2a)
         
-        var comp: [CGFloat] = Array(repeating: 0, count: 4);
-        for i in 0...3 {
-            comp[i] = comp1[i] + (comp2[i] - comp1[i]) * CGFloat(amount)
-        }
+        let compr: CGFloat = comp1r + (comp2r - comp1r) * CGFloat(amount)
+        let compg: CGFloat = comp1g + (comp2g - comp1g) * CGFloat(amount)
+        let compb: CGFloat = comp1b + (comp2b - comp1b) * CGFloat(amount)
+        let compa: CGFloat = comp1a + (comp2a - comp1a) * CGFloat(amount)
         
-        return UIColor(red:comp[0], green: comp[1], blue: comp[2], alpha: comp[3])
+        return UIColor(red:compr, green: compg, blue: compb, alpha: compa)
     }
     
     

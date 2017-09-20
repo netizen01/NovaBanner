@@ -13,9 +13,8 @@ open class NovaBanner: NSObject {
         public var titleColor: UIColor = .white
         public var subtitleColor: UIColor = .white
         
-        public var bannerPadding: UIEdgeInsets = UIEdgeInsets(top: 12, left: 8, bottom: 12, right: 8)
+        public var bannerPadding: UIEdgeInsets = UIEdgeInsets(top: -16, left: 8, bottom: 12, right: 8)
         public var textSpacing: CGFloat = 4
-        public var topPadding: CGFloat = 20
         public var animateInDuration: TimeInterval = 0.25
         public var animateOutDuration: TimeInterval = 0.25
         public var titleFont: UIFont = .preferredFont(forTextStyle: UIFontTextStyle.headline)
@@ -201,7 +200,7 @@ class NovaBannerViewController: UIViewController {
         super.viewDidAppear(animated)
         
         bannerViewContraints = constrain(view, bannerView, replace: bannerViewContraints) { view, bannerView in
-            bannerView.top == view.top - banner.theme.topPadding
+            bannerView.top == view.top
         }
         UIView.animate(withDuration: banner.theme.animateInDuration, animations: {
             self.view.layoutIfNeeded()
@@ -289,7 +288,7 @@ class NovaBannerView: UIView {
 
         constrain(titleLabel, subtitleLabel, imageView, self) { titleLabel, subtitleLabel, imageView, view in
             
-            imageView.top == view.top + theme.bannerPadding.top + theme.topPadding
+            imageView.top == view.topMargin + theme.bannerPadding.top
             imageView.left == view.left + theme.bannerPadding.left
             imageView.bottom == view.bottom - theme.bannerPadding.bottom
             
@@ -297,9 +296,9 @@ class NovaBannerView: UIView {
                 imageView.width == 0
             }
             
+            titleLabel.top == view.topMargin + theme.bannerPadding.top
             titleLabel.left == imageView.right + theme.bannerPadding.left
             titleLabel.right == view.right - theme.bannerPadding.right
-            titleLabel.top == view.top + theme.bannerPadding.top + theme.topPadding
             
             if self.subtitleLabel.text != nil {
                 titleLabel.bottom == subtitleLabel.top - theme.textSpacing
