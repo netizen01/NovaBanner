@@ -146,6 +146,7 @@ class NovaBannerViewController: UIViewController {
     fileprivate let bannerView = NovaBannerView()
     
     fileprivate let tapGestureRecognizer = UITapGestureRecognizer()
+    fileprivate let swipeGestureRecognizer = UISwipeGestureRecognizer()
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -163,7 +164,12 @@ class NovaBannerViewController: UIViewController {
         view.addSubview(bannerView)
         
         tapGestureRecognizer.addTarget(self, action: #selector(NovaBannerViewController.tapGestureHandler(_:)))
+        tapGestureRecognizer.require(toFail: swipeGestureRecognizer)
         bannerView.addGestureRecognizer(tapGestureRecognizer)
+        
+        swipeGestureRecognizer.addTarget(self, action: #selector(NovaBannerViewController.swipeGestureHandler(_:)))
+        swipeGestureRecognizer.direction = .up
+        bannerView.addGestureRecognizer(swipeGestureRecognizer)
     }
     
     fileprivate var bannerViewContraints: ConstraintGroup!
@@ -227,11 +233,17 @@ class NovaBannerViewController: UIViewController {
         }
     }
     
-    
     @objc func tapGestureHandler(_ gesture: UITapGestureRecognizer) {
         if bannerView.hitTest(gesture.location(in: bannerView), with: nil) != nil {
             gesture.isEnabled = false
             banner.tapHandler?(banner)
+            banner.dismiss()
+        }
+    }
+    
+    @objc func swipeGestureHandler(_ gesture: UISwipeGestureRecognizer) {
+        if bannerView.hitTest(gesture.location(in: bannerView), with: nil) != nil {
+            tapGestureRecognizer.isEnabled = false
             banner.dismiss()
         }
     }
