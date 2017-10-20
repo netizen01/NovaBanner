@@ -156,7 +156,10 @@ class NovaBannerViewController: UIViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        modalPresentationStyle = .none
+        modalTransitionStyle = .crossDissolve
     }
     
     override func loadView() {
@@ -194,8 +197,8 @@ class NovaBannerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -270,7 +273,15 @@ class NovaBannerView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        initViews()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initViews()
+    }
+    
+    private func initViews() {
         addSubview(imageView)
         addSubview(titleLabel)
         addSubview(subtitleLabel)
@@ -289,7 +300,6 @@ class NovaBannerView: UIView {
     }
     
     internal func applyTheme(_ theme: NovaBanner.Theme) {
-        
         backgroundColor = theme.backgroundColor
         titleLabel.font = theme.titleFont
         subtitleLabel.font = theme.subtitleFont
@@ -299,8 +309,11 @@ class NovaBannerView: UIView {
         subtitleLabel.textColor = theme.subtitleColor
 
         constrain(titleLabel, subtitleLabel, imageView, self) { titleLabel, subtitleLabel, imageView, view in
-            
-            imageView.top == view.topMargin + theme.bannerPadding.top
+            if #available(iOS 11.0, *) {
+                imageView.top == view.topMargin + theme.bannerPadding.top
+            } else {
+                imageView.top == view.topMargin + theme.bannerPadding.top + 20
+            }
             imageView.left == view.left + theme.bannerPadding.left
             imageView.bottom == view.bottom - theme.bannerPadding.bottom
             
@@ -308,7 +321,7 @@ class NovaBannerView: UIView {
                 imageView.width == 0
             }
             
-            titleLabel.top == view.topMargin + theme.bannerPadding.top
+            titleLabel.top == imageView.top
             titleLabel.left == imageView.right + theme.bannerPadding.left
             titleLabel.right == view.right - theme.bannerPadding.right
             
@@ -325,8 +338,5 @@ class NovaBannerView: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
 }
