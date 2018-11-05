@@ -17,8 +17,8 @@ open class NovaBanner: NSObject {
         public var textSpacing: CGFloat = 4
         public var animateInDuration: TimeInterval = 0.25
         public var animateOutDuration: TimeInterval = 0.25
-        public var titleFont: UIFont = .preferredFont(forTextStyle: UIFontTextStyle.headline)
-        public var subtitleFont: UIFont = .preferredFont(forTextStyle: UIFontTextStyle.subheadline)
+        public var titleFont: UIFont = .preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        public var subtitleFont: UIFont = .preferredFont(forTextStyle: UIFont.TextStyle.subheadline)
         
         init() {
             
@@ -32,11 +32,11 @@ open class NovaBanner: NSObject {
     }
     
     // Adjust the static Default Themes
-    open static var DefaultDuration: TimeInterval = 6
-    open static var ThemeDefault = Theme()
-    open static var ThemeNotify = Theme(.black, .white)
-    open static var ThemeFailure = Theme(.black, .white)
-    open static var ThemeSuccess = Theme(.black, .white)
+    public static var DefaultDuration: TimeInterval = 6
+    public static var ThemeDefault = Theme()
+    public static var ThemeNotify = Theme(.black, .white)
+    public static var ThemeFailure = Theme(.black, .white)
+    public static var ThemeSuccess = Theme(.black, .white)
     
     public enum BannerType {
         case `default`
@@ -47,12 +47,12 @@ open class NovaBanner: NSObject {
     
     open var theme: Theme = ThemeDefault
     
-    open let type: BannerType
-    open let title: String
-    open let subtitle: String?
-    open let image: UIImage?
-    open let tapHandler: ((_ banner: NovaBanner) -> ())?
-    open let dismissHandler: (() -> ())?
+    public let type: BannerType
+    public let title: String
+    public let subtitle: String?
+    public let image: UIImage?
+    public let tapHandler: ((_ banner: NovaBanner) -> ())?
+    public let dismissHandler: (() -> ())?
     
     public init(title: String, subtitle: String? = nil, type: BannerType = .default, image: UIImage? = nil, tapped: ((_ banner: NovaBanner) -> ())? = nil, dismissed: (() -> ())? = nil) {
         self.title = title
@@ -89,7 +89,7 @@ open class NovaBanner: NSObject {
         if bannerWindow == nil {
             bannerWindow = UIWindow(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: UIScreen.main.bounds.width, height: 0)))
             // Put the window under the Status Bar so it's no blurred out
-            bannerWindow?.windowLevel = UIWindowLevelStatusBar + 1
+            bannerWindow?.windowLevel = UIWindow.Level.statusBar + 1
             bannerWindow?.tintColor = UIApplication.shared.delegate?.window??.tintColor
             bannerWindow?.rootViewController = viewController
             bannerWindow?.isHidden = false

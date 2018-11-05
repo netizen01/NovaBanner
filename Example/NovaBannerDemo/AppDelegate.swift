@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         // Customize your NovaBanner Themes (Default, Notify, Failure, Success)
         var theme = NovaBanner.Theme(UIColor(white: 0.1, alpha: 0.9), .white)
