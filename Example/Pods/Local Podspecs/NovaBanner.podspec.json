@@ -1,6 +1,6 @@
 {
   "name": "NovaBanner",
-  "version": "0.5",
+  "version": "0.6",
   "summary": "Another Banner Package. Because.",
   "homepage": "https://github.com/netizen01/NovaBanner",
   "license": {
@@ -15,10 +15,12 @@
   },
   "source": {
     "git": "https://github.com/netizen01/NovaBanner.git",
-    "tag": "0.5"
+    "tag": "0.6"
   },
   "source_files": "Source/**/*.swift",
-  "swift_version": "4.2",
+  "swift_versions": [
+    "5.0"
+  ],
   "dependencies": {
     "NovaCore": [
 

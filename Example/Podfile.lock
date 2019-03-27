@@ -1,9 +1,9 @@
 PODS:
   - Cartography (3.1.0)
-  - NovaBanner (0.5):
+  - NovaBanner (0.6):
     - Cartography
     - NovaCore
-  - NovaCore (0.7)
+  - NovaCore (0.8)
 
 DEPENDENCIES:
   - NovaBanner (from `../`)
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
-  NovaBanner: e0763ade641ccf2d26fea7eb2502f328d3be1490
-  NovaCore: 05fede9551d63efdf38093fb22caeac3ff43f149
+  NovaBanner: 2139867d9c8be1fb747bc8ff71b53fc48378a1f9
+  NovaCore: 5f2ed889f1a95b4d566ad168b78eb6a8e7727662
 
 PODFILE CHECKSUM: 7e8d309a6a922541de089b97780b1a964b002638
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.7.0.beta.2
